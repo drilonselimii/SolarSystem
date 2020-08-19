@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Marsi</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="sistemiSolar2.css"/>
+         <style>
+                    
+                    table { color: #333;
+                              opacity:0.8;
+                               font-family:  "Lucida Sans Unicode", "Lucida Grande", Sans-Serif; 
+                               font-size: 14px;
+                               width: 850px;
+                               border-collapse: collapse;
+                               border-spacing: 0;
+                    box-shadow: 4px 4px 7px #B0C4DE;}
+                    td, th { border: 1px solid #CCC;
+                               height: 30px;}
+                         th {background: #DCDCDC; 
+                              font-weight: bold;}
+                         td {background: #FAFAFA; 
+                              text-align: center;}
+                         .mm{color:white;
+                         font-family:  "Lucida Sans Unicode", "Lucida Grande", Sans-Serif; }
+                         #ss{color:black;}
+                               #submit 
+                             {  background-color: white;
+                                padding:1px 5px 1px 5px;
+                                position:absolute;
+                                margin-left:125%;
+                                margin-top: 0%; 
+                              }
+                        #planetss
+                            {
+                                    position:absolute;
+                                    margin-left:79%;
+                                    margin-top:0%;
+
+                           }
+                         
+                 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("table").hide();
+        alert("The table is now hidden");
+    });
+    $("#show").click(function(){
+        $("table").show();
+        alert("The table is shown");
+    });
+});
+       </script>
+      
+<script>
+$(document).ready(function(){
+    $(".btn1").click(function(){
+        $("iframe").fadeOut(1000);
+    });
+    $(".btn2").click(function(){
+        $("iframe").fadeIn(1000);
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("p").css("background-color", "transparent");
+});
+</script>
+<script>
+    $(document).ready(function() {
+    $("#planetfoto").animate({left: "+=300"}, 2000);
+    $("#planetfoto").animate({left: "-=300"}, 1000);
+});
+    </script>
+    <script>
+$(document).ready(function(){
+    $("h2").bind("click", function(){
+        alert("The title was clicked.");
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("img").click(function(){
+        alert("The image was clicked.");
+    });
+});
+</script>
+       
+
+    </head>
+    
+       
+        
+      <body id="bg" >
+        
+         
+          <h2 id="title" >Marsi</h2>
+        
+        
+            <img id="planetfoto" src="marsi.ico" alt="marsi" /><div class="video">
+			<form method="get">
+                 <input list="planets" name = "planets" id = "planetss">
+                 <datalist id="planets">
+                     <option value = "Mercury"> Mercury </option>
+                     <option value="Venus"> Venus </option>
+                     <option value="Earth">Earth </option>
+                     <option value="Mars">Mars</option>
+                     <option value="Jupiter">Jupiter</option>
+                     <option value="Saturn">Saturn</option>
+                     <option value="Uranus">Uranus</option>
+                     <option value="Neptune">Neptune</option>
+                     <option value="Sun">Sun</option>
+  </datalist>
+    </form>
+            <button id = "submit" onclick="ShkoNeFaqe();">Submit</button>
+            
+             <script>
+                function ShkoNeFaqe(){
+                    var planetz = document.getElementById("planetss").value;
+                    
+                    if(planetz === "Mercury")location = "Mercury.html";
+                    if(planetz === "Venus")location = "Venus.html";
+                    if(planetz === "Earth")location = "Earth.html";
+                    if(planetz === "Mars")location = "Mars.html";
+                    if(planetz === "Jupiter")location = "Jupiter.html";
+                    if(planetz === "Saturn")location = "Saturn.html";
+                    if(planetz === "Uranus")location = "Uranus.html";
+                    if(planetz === "Neptune")location = "Neptune.html";
+                    if(planetz === "Sun")location = "Sun.html";
+            }
+            </script>
+                <button class="btn1">Fade out</button>
+               <button class="btn2">Fade in</button>
+                <iframe width="350" height="250" src="https://www.youtube.com/embed/JYDOCgpRHN0" frameborder="0" allowfullscreen></iframe></div>
+            <div class="video3"><iframe width="350" height="250" src="https://www.youtube.com/embed/Dzu8yXE4KNg" frameborder="0" allowfullscreen></iframe></div>
+            
+            <div id="tekst">
+                Marsi &euml;sht&euml; planeti i kat&euml;rt nga Dielli dhe i dyti m&euml; i vogli planet n&euml; Sistemin Diellor, 
+                pas Merkurit. &euml;sht&euml; i<br> em&euml;ruar pas zotit t&euml; luft&euml;s,
+                ndryshe njihet si "Planeti i kuq" sepse oksidi prevalent i hekurit n&euml; sip&euml;rfaqen e tij<br> ia jep atij paraqitjen e kuqe.
+             Marsi &euml;sht&euml; nj&euml; planet tok&euml;sor me nj&euml; atmosfer&euml; t&euml; holl&euml;.
+            </div>
+       <button id="hide">Hide</button>
+        <button id="show">Show</button>
+         <table  border="1" cellspacing="3">
+            <thead>
+                <tr>
+                    <th><img src="marsi.ico" alt="Marsi" width="80" height="80"></th>
+                     <th>Distanca nga Dielli (milion km)</th>
+                    <th> Koha e Rrotullimit</th>
+                    <th>Koha e rrotullimit ne Ekuator </th>
+                    <th>Jashtëqendërsia e Orbitit</th>
+                    <th>Diametri ekuatorial(km) </th>
+                    <th>Masa</th>
+                    <th>Densiteti</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><h3 id="ss">Marsi</h3></td>
+                    <td>227.9</td>
+                    <td>687 d</td>
+                    <td>24 h 56 m 4 s</td>
+                    <td>0.093</td>
+                    <td>6,794</td>
+                    <td>0.11</td>
+                    <td>3.9</td>
+                </tr>
+            </tbody>
+        </table>
+
+      
+         <p>FAKTE T&Euml; SHPEJTA P&Euml;R MARSIN </p>
+        <ul>
+            <li class="mm">Marsi &euml;sht&euml; planeti i kat&euml;rt nga Dielli dhe i fundit planet tok&euml;sor me rreth 227,940,000 km nga Dielli..</li>
+            <li class="mm">Planeti &euml;sht&euml; em&euml;rtuar pas Marsit, zotit Romak t&euml; luft&euml;s. Ishte i njohur p&euml;r Greket antik si Ares, zoti i tyre<br> i luft&euml;s. </li>
+            <li class="mm">Vet&euml;m 16 prej 39 mision n&euml; Mars kan&euml; pasur sukses.</li>
+            <li class="mm">Mali m&euml; i lart&euml; q&euml; njihet n&euml; sistemin diellor &euml;sht&euml; n&euml; Mars.</li>
+            <li class="mm">Dy h&euml;nat e Marsit, Phobos dhe Deimos, ishin t&euml; shkruara n&euml; librin e Jonathan S&euml;ift "Gulliver's Travels"- 151<br> vite para se ato t&euml; zbuloheshin.</li>
+        </ul>
+       <p>FAKTE T&Euml; DETAJUARA P&Euml;R MARSIN </p>
+        
+        <div id="planeteTekst"> Marsi dhe Toka kan&euml; p&euml;raf&euml;rsisht mas&euml; t&euml; njejt&euml; sip&euml;rfaq&euml;sore
+            .Edhe pse thuhet se Marsi ka 15 % t&euml; vellimin t&euml; Tok&euml;s dhe 10 % t&euml; mas&euml;s s&euml; 
+            Tok&euml;s , diku rreth 2/3 e sip&euml;rfaq&euml;s tok&euml;sore &euml;sht&euml; e mbuluar me uj&euml; . 
+            Graviteti i sip&euml;rfaqes s&euml; Marsit &euml;sht&euml; vet&euml;m 37 % e asaj t&euml; tok&euml;s 
+            ( dometh&euml;n&euml; se mund t&euml; k&euml;rcesh 3 her&euml; m&euml; lart&euml; n&euml; Mars ).
+        
+        
+        Marsi &euml;sht&euml; e njohur p&euml;r bjeshk&euml;t m&euml; t&euml; 
+            larta n&euml; sistemin ton&euml; diellor . Olympus Mons , vullkani mbrojt&euml;s ,
+            &euml;sht&euml; 21 km e lart&euml; dhe 600 km n&euml; diamet&euml;r . Pavar&euml;sisht
+            se &euml;sht&euml; krijuar biliona vite m&euml; par&euml; , Marsi karakterizohej me ngacmimet
+            vullkanike dhe llava vullkanike dhe shum&euml; shkenctar&euml; besojn&euml; se jan&euml; ende aktive .
+       
+        
+        Vet&euml;m 18 misione n&euml; Mars kan&euml; qen&euml; t&euml; suksesshme. 
+            Q&euml; nga Shtatori i 2014-t&euml;s kan&euml; qen&euml; 40 misione n&euml; Mars , 
+            p&euml;rfshir&euml; orbitera, lansues por pa llogaritur flybys . Arritja m&euml; e fundit &euml;sht&euml; 
+            ajo e misionit Mars Curiosity n&euml; 2012, misioni MAVEN , e cila arriti m&euml; 22 shtator , 2014 , e
+            p&euml;rcjellur nga orbiteri i Organizat&euml;s Indiane t&euml; 
+            Rik&euml;rkimeve Hap&euml;sinore  MOM Mangalyaan , e cila arriti m&euml; 24 shtator 2014.. 
+        
+        
+        Marsi &euml;shte e njohur p&euml;r stuhit&euml; e pluhurit t&euml; cilat zgjasin m&euml; 
+            s&euml; shumti n&euml; sistemin diellor . K&euml;to stuhi mund t&euml; zgjasin me muaj dhe
+            ta mbulojn&euml; gjith&euml; planetin . Sezonet jan&euml; shum&euml; ekstreme n&euml; Mars
+            p&euml;r shkak t&euml; l&euml;vizjes eliptike t&euml; saj rreth Diellit dhe p&euml;r arsyen se orbita 
+            ovale e tij &euml;sht&euml;
+            m&euml; e zgjatura nga t&euml; gjith&euml; planet&euml;t e tjer&euml; sistemin diellor .
+       
+        
+       
+        
+        Supozohet se ka shenja t&euml; ujit atje . Me vite &euml;sht&euml; menduar se ka uj&euml;
+            n&euml; form&euml; t&euml; akullit n&euml; planet . Shenjat e para t&euml; ujit jan&euml; vijat 
+            e err&euml;ta apo njollat n&euml; krater dhe n&euml; shkembinjt&euml; t&euml; cilat shihen n&euml; 
+            imazhet satelitore . Duke pasur parasysh atmosfer&euml;n e
+            Marsit , ky uj&euml; duhet t&euml; jet&euml; i kripur p&euml;r ta p&euml;rballuar nga ngrirja apo avullimi ..
+        
+        Nj&euml; dit&euml; Marsi do t&euml; ket&euml; unaz&euml; . N&euml; 20-40 milion vitet e ardhshme
+            , sateliti m&euml; i madh i tij Fobos do t&euml; ndahet n&euml; pjes&euml; nga forcat gravitacionale t&euml; 
+            cilat do t&euml; shpien
+            n&euml; krijimin e unaz&euml;s e cila mund t&euml; zgjas&euml; deri n&euml; 100 milion vjet .
+        </div>
+        
+    </body>
+</html>

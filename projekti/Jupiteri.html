@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            Jupiteri
+        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="sistemiSolar2.css"/>
+        <style>
+                    
+                    table { color: #333;
+                            opacity: 0.8;
+                               font-family:  "Lucida Sans Unicode", "Lucida Grande", Sans-Serif; 
+                               font-size: 14px;
+                               width: 850px;
+                               border-collapse: collapse;
+                               border-spacing: 0;
+                         box-shadow: 4px 4px 7px #B0C4DE;}
+                    td, th { border: 1px solid #CCC;
+                               height: 30px;}
+                         th {background: #DCDCDC; 
+                              font-weight: bold;}
+                         td {background: #FAFAFA; 
+                              text-align: center;}
+                         #ss{color:black;}
+                         .mm{color:white;
+                             font-family:  "Lucida Sans Unicode", "Lucida Grande", Sans-Serif; 
+                                  } 
+                                 #submit 
+                             {  background-color: white;
+                                padding:1px 5px 1px 5px;
+                                position:absolute;
+                                margin-left:125%;
+                                margin-top: 0%; 
+                              }
+                        #planetss
+                            {
+                                    position:absolute;
+                                    margin-left:79%;
+                                    margin-top:0%;
+
+                           }
+                        
+                 </style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("table").hide();
+        alert("The table is now hidden");
+    });
+    $("#show").click(function(){
+        $("table").show();
+        alert("The table is shown");
+    });
+});
+       </script>
+      
+<script>
+$(document).ready(function(){
+    $(".btn1").click(function(){
+        $("iframe").fadeOut(1000);
+    });
+    $(".btn2").click(function(){
+        $("iframe").fadeIn(1000);
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("p").css("background-color", "transparent");
+});
+</script>
+<script>
+    $(document).ready(function() {
+    $("#planetfoto").animate({left: "+=300"}, 2000);
+    $("#planetfoto").animate({left: "-=300"}, 1000);
+});
+    </script>
+    <script>
+$(document).ready(function(){
+    $("h2").bind("click", function(){
+        alert("The title was clicked.");
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("img").click(function(){
+        alert("The image was clicked.");
+    });
+});
+</script>
+       
+
+    </head>
+       
+         <body id="bg">
+        
+         
+          <h2 id="title" >Jupiteri</h2>
+        
+            <img id="planetfoto" src="jupiteri.ico" alt="Jupiteri" width="250" height="240"/><div class="video">
+			 <form method="get">
+                 <input list="planets" name = "planets" id = "planetss">
+                 <datalist id="planets">
+                     <option value = "Mercury"> Mercury </option>
+                     <option value="Venus"> Venus </option>
+                     <option value="Earth">Earth </option>
+                     <option value="Mars">Mars</option>
+                     <option value="Jupiter">Jupiter</option>
+                     <option value="Saturn">Saturn</option>
+                     <option value="Uranus">Uranus</option>
+                     <option value="Neptune">Neptune</option>
+                     <option value="Sun">Sun</option>
+  </datalist>
+    </form>
+            <button id = "submit" onclick="ShkoNeFaqe();">Submit</button>
+            
+             <script>
+                function ShkoNeFaqe(){
+                    var planetz = document.getElementById("planetss").value;
+                    
+                    if(planetz === "Mercury")location = "Mercury.html";
+                    if(planetz === "Venus")location = "Venus.html";
+                    if(planetz === "Earth")location = "Earth.html";
+                    if(planetz === "Mars")location = "Mars.html";
+                    if(planetz === "Jupiter")location = "Jupiter.html";
+                    if(planetz === "Saturn")location = "Saturn.html";
+                    if(planetz === "Uranus")location = "Uranus.html";
+                    if(planetz === "Neptune")location = "Neptune.html";
+                    if(planetz === "Sun")location = "Sun.html";
+            }
+            </script>
+                <button class="btn1">Fade out</button>
+               <button class="btn2">Fade in</button>
+                <iframe width="350" height="200" src="https://www.youtube.com/embed/s56pxa9lpvo" frameborder="0" allowfullscreen></iframe></div>
+            <div class="video3"><iframe width="350" height="250" src="https://www.youtube.com/embed/8XPmcfRXDrc" frameborder="0" allowfullscreen></iframe></div>
+            
+            
+            <div id="tekst">
+                Jupiteri &euml;sht&euml; planeti i pest&euml; nga Dielli dhe m&euml; i madhi n&euml; sistemin diellor.
+                &euml;sht&euml; nj&euml; planet gjigand me nj&euml; <br>mas&euml; prej nj&euml; t&euml; nj&euml;mit&euml;n
+                 e Diellit, por dy e gjysm&euml; here m&euml; i madh se t&euml; gjith&euml; planetet n&euml; sistemin diellor s&euml; <br>bashku.
+                Jupiteri &euml;sht&euml; nj&euml; gjigand gazi s&euml; bashku me Saturnin, me dy planet&euml;t gjigand&euml; tjer&euml;, 
+                Uranin dhe <br>Neptunin q&euml; jan&euml; gjigand akulli. Romak&euml;t e em&euml;rtuan at&euml; pas zotit t&euml; tyre Jupiterit. 
+            </div>
+            <button id="hide">Hide</button>
+        <button id="show">Show</button>
+          <table  border="1" cellspacing="3">
+            <thead>
+                <tr>
+                    <th><img src="jupiteri.ico" alt="Jupiter" height="95" width="80"></th>
+                     <th>Distanca nga Dielli (milion km)</th>
+                    <th> Koha e Rrotullimit</th>
+                    <th>Koha e rrotullimit ne Ekuator </th>
+                    <th>Jashtëqendërsia e Orbitit</th>
+                    <th>Diametri ekuatorial(km) </th>
+                    <th>Masa</th>
+                    <th>Densiteti</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><h2 id="ss">Jupiteri</h2></td>
+                    <td>778.4</td>
+                    <td>11.9 y</td>
+                    <td>9h 50 min 30 s</td>
+                    <td>0.048</td>
+                    <td>142,984</td>
+                    <td>317.83</td>
+                    <td>1.3</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+      
+         <p>FAKTE T&Euml; SHPEJTA P&Euml;R JUPITERIN </p>
+        <ul>
+            
+            <li class="mm">Jupiteri &euml;sht&euml; planeti m&euml; i madh&euml; dhe m&euml; masiv n&euml; sistemin diellor.</li>
+            <li class="mm">Jupiteri ka dit&euml;n m&euml; t&euml; shkurt&euml;r prej 8 planet&euml;ve. </li>
+            <li class="mm">Jupiteri ka s&euml; paku 67 satelite rreth planetit.</li>
+            <li class="mm">Prej h&euml;nave m&euml; t&euml; m&euml;dha t&euml; Jupiterit, Ganymede &euml;sht&euml; h&euml;na m&euml; e madhe n&euml; sistemin diellor.</li>
+            <li class="mm">Jupiteri &euml;sht&euml; objekti i kat&euml;rt m&euml; i ndritsh&euml;m n&euml; sistemin tone diellor.</li>
+            <li class="mm">Tet&euml; anije kozmike kan&euml; vizituar Jupiterin deri m&euml; tani.
+</li>
+            
+        </ul>
+        <p>FAKTE T&Euml; DETAJUARA P&Euml;R JUPITERIN </p>
+        
+        <div id="planeteTekst" >  Shkenc&euml;tar&euml;t e lasht&euml; t&euml; Babilonis ishin t&euml; par&euml;t q&euml; pan&euml; shenjat e Jupiterit.
+            Kjo ishte rreth shekullit t&euml; 7 ose 8 para Krishtit . Jupiteri &euml;shte 
+            em&euml;ruar si shkak i mbretit t&euml; zot&euml;rave romak . Tek grek&euml;t , paraqiste Zeusin , zotin e vet&euml;timave.
+          Mesopotamian&euml;t pan&euml; Jupiterin si zoti Marduk dhe
+          mbrojt&euml;s i qytetit t&euml; Babilonis&euml; . Fiset gjermane e pan&euml; k&euml;t&euml; planet si Donar apo Thor .
+        
+        
+       
+            Jupiteri ka dit&euml;n m&euml; t&euml; shkurt&euml; nga t&euml; gjith&euml; planet&euml;t. Rrotullimin rreth boshtit t&euml; tij e kryen p&euml;r 9 or&euml; e 55 minuta.
+             Rrotullimi i tij i shpejt&euml; b&euml;n&euml; q&euml; planeti t&euml; ket&euml; form&euml; t&euml; shtypur .
+        
+        
+ Jupiteri ka p&euml;rb&euml;r&euml;s t&euml; vecant&euml; t&euml; reve . Atmosfera e ep&euml;rme e Jupiterit &euml;sht&euml; 
+     e ndar&euml; n&euml; rripa t&euml; reve dhe zonave. Ato m&euml; s&euml; shumti p&euml;rb&euml;hen nga kristalet
+amone , sulfur , dhe p&euml;rzierjeve t&euml; k&euml;tyre t&euml; fundit .
+
+        
+Brend&euml;sia e Jupiterit p&euml;rb&euml;het nga gur&euml;t , metalet , dhe komponimet e hidrogjenit , Posht&euml; atmosfer&euml;s masive t&euml; Jupiterit 
+    ( q&euml; p&euml;rb&euml;het kryesisht nga hidrogjeni ) ,
+            ka shtresa t&euml; gazit t&euml; kompresuar hidrogjenike, hidrogjen t&euml; l&euml;ngsh&euml;m metalik , dhe baza t&euml; akullit , gur&euml; dhe metale .
+
+        
+Jupiteri ka nj&euml; sistem t&euml; holl&euml; t&euml; unazave . Kjo unaz&euml; p&euml;rb&euml;het nga pluhurat t&euml;
+    cilat jan&euml; d&euml;buar nga Jupiteri gjat&euml; r&euml;nies s&euml; kometave dhe asteroideve . Sistemi unazor fillon 92,000 km
+            mbi ret&euml; e Jupiterit dhe 225,000 km nga sip&euml;rfaqja e planetit . Ky sistem unazor &euml;sht&euml; rreth 2,000 deri 12,500 km e trash&euml; .
+
+        
+ Tet&euml; anije kozmike kan&euml; vizituar Jupiterin . Pioneer 10 dhe 11 , Voyager 1 dhe 2 , Galileo , Cassini , Ulysses , dhe missionet e New Horizons.
+      Misioni i Junos &euml;sht&euml; rrug&euml;s drejt Jupiterit
+dhe do t&euml; arrij&euml; n&euml; Korrik 2016 . Misionet e ardhshme do t&euml; fokusohen n&euml; satelit&euml;t 
+e tij si Europa , Ganimedi dhe Kallisto , dhe n&euml; sip&euml;rfaqet oqeanike t&euml; tyre.
+        </div>
+        
+        
+    </body>
+</html>

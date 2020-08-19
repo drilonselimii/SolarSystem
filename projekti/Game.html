@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html manifest="Gameoffline.appcache" >
+<head>
+<meta charset="utf-8" />
+<style>
+body{ text-align: center;
+  background-image: url("galaxy1.gif");
+  background-repeat: no-repeat;
+  background-size: 110%;	}
+canvas {
+    border:1px solid blue;
+	border-radius: 10px;  }
+h1{ color: white;
+width: 400px;
+margin-left: auto;
+margin-right: auto;}
+
+</style>
+</head>
+<body onload="startGame()">
+<audio autoplay loop ><source src="inception.mp3" ></audio>
+
+<script>
+
+var myGamePiece;
+var myBackground;
+var myObstacles=[];
+var myScore;
+function startGame() {
+    myGamePiece = new component(120,100, "airship1.png", 340, 350, "image");
+	myBackground = new component(800,500, "gb.jpg", 0, 0, "image");
+	myScore = new component("30px", "Consolas", "white", 600, 40, "text");
+    myGameArea.start();
+}
+
+var myGameArea = {
+    canvas : document.createElement("canvas"),
+    start : function() {
+        this.canvas.width = 800;
+        this.canvas.height = 500;
+        this.context = this.canvas.getContext("2d");
+        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+		this.frameNo=0;
+        this.interval = setInterval(updateGameArea, 20);
+		window.addEventListener('keydown', function(e){ myGameArea.key=e.keyCode;})
+		window.addEventListener('keyup', function(e){ myGameArea.key=false;})
+        },
+    clear : function() {
+        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);},
+	 stop : function() {
+        clearInterval(this.interval);}
+	}
+	
+function everyinterval(n) {
+    if ((myGameArea.frameNo / n) % 1 == 0) {return true;}
+    return false;}
+
+function component(width, height, color, x, y, type) {
+    this.type = type;
+    if (type == "image") {
+        this.image = new Image();
+        this.image.src = color;
+    }
+    this.width = width;
+    this.height = height;
+    this.speedX = 0;
+    this.speedY = 0;    
+    this.x = x;
+    this.y = y;    
+    this.update = function() {
+        ctx = myGameArea.context;
+		
+        if (type == "image") {
+            ctx.drawImage(this.image, 
+                this.x, 
+                this.y,
+                this.width, this.height);
+        } else {
+            ctx.fillStyle = color;
+            ctx.fillRect(this.x, this.y, this.width, this.height);
+        }
+		if (this.type == "text") {
+      ctx.font = this.width + " " + this.height;
+      ctx.fillStyle = color;
+      ctx.fillText(this.text, this.x, this.y);
+    }
+		
+    },
+    this.newPos = function() {
+        this.x += this.speedX;
+        this.y += this.speedY;        
+    },
+	 this.crashWith = function(otherobj) {
+        var myleft = this.x+110 ;
+        var myright = this.x-110 + (this.width);
+        var mytop = this.y+10;
+        var mybottom = this.y-110 + (this.height);
+        var otherleft = otherobj.x;
+        var otherright = otherobj.x + (otherobj.width);
+        var othertop = otherobj.y;
+        var otherbottom = otherobj.y + (otherobj.height);
+        var crash = true;
+        if ((mybottom < othertop) ||
+               (mytop > otherbottom) ||
+               (myright < otherleft) ||
+               (myleft > otherright)) {
+           crash = false;
+        }
+        return crash;
+    }
+	
+}
+
+function updateGameArea() {
+
+ var x, y;
+    for (i = 0; i < myObstacles.length; i += 1) {
+        if (myGamePiece.crashWith(myObstacles[i])) {
+            myGameArea.stop();
+            return;
+        } 
+    }
+    myGameArea.clear();
+    myGameArea.frameNo += 1;
+	myBackground.update();
+    if (myGameArea.frameNo == 1 || everyinterval(30)) {
+       
+        myObstacles.push(new component(200,200,"meteor1.png", Math.floor((Math.random()*600)+1),-200,"image"));
+    }
+    for (i = 0; i < myObstacles.length; i += 1) {    
+        myObstacles[i].y += +5;
+        myObstacles[i].update();	
+    }
+	myGamePiece.speedX=0;
+	myGamePiece.speedY=0;
+	if (myGameArea.key && myGameArea.key == 37) {myGamePiece.speedX = -1; }
+    if (myGameArea.key && myGameArea.key == 39) {myGamePiece.speedX = 1; }
+    if (myGameArea.key && myGameArea.key == 38) {myGamePiece.speedY = -1; }
+    if (myGameArea.key && myGameArea.key == 40) {myGamePiece.speedY = 1; }
+    myScore.text="SCORE: " + myGameArea.frameNo;
+    myScore.update();  
+	myGamePiece.newPos();
+    myGamePiece.newPos();  
+    myGamePiece.update();
+	}
+</script>
+<h1>You need to play with arrows (Duhet te luash me shigjeta)</h1>
+</body>
+</html>

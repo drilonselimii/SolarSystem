@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <link rel="stylesheet" href="logincss.css" >
+   
+        
+        <title>Login</title>
+        <style>
+             body
+             {background: #111; margin: 0px;}
+            #banner
+            {width: 100%;
+            height: 500px;
+            margin: 0px auto;
+            background-color: #000;
+            
+            background-image: url(planet.png) , url(stars.png), url(starsb.jpg);
+            background-position: 120% 70px , 0px 0px, 0px 0px;
+            background-repeat: no-repeat, repeat, repeat;
+            animation: animate-background linear 30s infinite;
+            }
+            @keyframes animate-background
+            {
+                from {  background-position: 120% 70px, 0px 0px, 0px 0px; }
+                to {  background-position: -20% 500px , -100px 10px, -1900px 0px;   }
+            }
+             
+             
+            
+        </style>
+       
+    </head>
+    
+    
+    <body id="banner">
+       
+        
+        
+        
+        <img src="asteroid.png" alt="Kometa" style="margin: 100px 0px 0px  40%;">
+        <div id="aa">
+            <h2>Login</h2>
+            <form>
+                <input type="text" id="username" placeholder="Enter Username" required > <br><br>
+                <input type="password" id="password" placeholder="Enter Password" required ><br><br>
+                <input type="checkbox" checked="checked"> Remember me<br><br>  
+                <a href="123" ><input type="submit" id="submit" value="Login"></a>
+            </form>
+            
+            
+        </div>
+      
+    </body>
+  
+</html>
+   

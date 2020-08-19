@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Mercury</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="sistemiSolar2.css"/>
+         <style>
+                    
+                    table { color: #333;opacity:0.8;
+                               font-family:  "Lucida Sans Unicode", "Lucida Grande", Sans-Serif; 
+                               font-size: 14px;
+                               width: 850px;
+                               border-collapse: collapse;
+                               border-spacing: 0;
+                              box-shadow: 4px 4px 7px #B0C4DE;}
+                    td, th { border: 1px solid #CCC;
+                               height: 30px;}
+                         th {background: #DCDCDC; 
+                              font-weight: bold;}
+                         td {background: #F3F3F3; 
+                              text-align: center;}
+                         #ss{color:black;}
+                         .mm{color:white;}
+                             #submit 
+                             {  background-color: white;
+                                padding:1px 5px 1px 5px;
+                                position:absolute;
+                                margin-left:125%;
+                                margin-top: 0%; 
+                              }
+                        #planetss
+                            {
+                                    position:absolute;
+                                    margin-left:79%;
+                                    margin-top:0%;
+
+                           }
+                        
+          
+       </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("table").hide();
+        alert("The table is now hidden");
+    });
+    $("#show").click(function(){
+        $("table").show();
+        alert("The table is shown");
+    });
+});
+       </script>
+      
+<script>
+$(document).ready(function(){
+    $(".btn1").click(function(){
+        $("iframe").fadeOut(1000);
+    });
+    $(".btn2").click(function(){
+        $("iframe").fadeIn(1000);
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("p").css("background-color", "transparent");
+});
+</script>
+<script>
+    $(document).ready(function() {
+    $("#planetfoto").animate({left: "+=300"}, 2000);
+    $("#planetfoto").animate({left: "-=300"}, 1000);
+});
+    </script>
+    <script>
+$(document).ready(function(){
+    $("h2").bind("click", function(){
+        alert("The title was clicked.");
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("img").click(function(){
+        alert("The image was clicked.");
+    });
+});
+</script>
+
+
+    </head>
+    <body id ="bg">
+        
+        
+        <h2 id="title">Mercury</h2>
+        
+        
+            <img id="planetfoto" src="Merkur.png"  alt ="Mercury" /><div class="video">
+			<form method="get">
+                 <input list="planets" name = "planets" id = "planetss">
+                 <datalist id="planets">
+                     <option value = "Mercury"> Mercury </option>
+                     <option value="Venus"> Venus </option>
+                     <option value="Earth">Earth </option>
+                     <option value="Mars">Mars</option>
+                     <option value="Jupiter">Jupiter</option>
+                     <option value="Saturn">Saturn</option>
+                     <option value="Uranus">Uranus</option>
+                     <option value="Neptune">Neptune</option>
+                     <option value="Sun">Sun</option>
+  </datalist>
+    </form>
+            <button id = "submit" onclick="ShkoNeFaqe();">Submit</button>
+            
+             <script>
+                function ShkoNeFaqe(){
+                    var planetz = document.getElementById("planetss").value;
+                    
+                    if(planetz === "Mercury")location = "Mercury.html";
+                    if(planetz === "Venus")location = "Venus.html";
+                    if(planetz === "Earth")location = "Earth.html";
+                    if(planetz === "Mars")location = "Mars.html";
+                    if(planetz === "Jupiter")location = "Jupiter.html";
+                    if(planetz === "Saturn")location = "Saturn.html";
+                    if(planetz === "Uranus")location = "Uranus.html";
+                    if(planetz === "Neptune")location = "Neptune.html";
+                    if(planetz === "Sun")location = "Sun.html";
+            }
+            </script>
+                 <button class="btn1">Fade out</button>
+               <button class="btn2">Fade in</button>
+                
+                <iframe width="350" height="250" src="https://www.youtube.com/embed/m3ZUhpisWeQ" frameborder="0" allowfullscreen></iframe></div>
+            <div class="video3"><iframe width="350" height="250" src="https://www.youtube.com/embed/h0ZNIIhPma8" frameborder="0" allowfullscreen></iframe></div>
+            
+            <div id="tekst">
+                Mercury is the smallest and innermost planet in the Solar System.<br>
+            Its orbital period (about 88 Earth days) is less than any other planet
+            in the Solar System. Seen from Earth, it<br> appears to move around its orbit
+            in about 116 days. It has no known natural satellites. It is named after the<br> 
+            Roman deity Mercury, the messenger to the gods.<br>
+            </div>
+            <button id="hide">Hide</button>
+        <button id="show">Show</button>
+           <table  border="1" cellspacing="3">
+            <thead>
+                <tr>
+                    <th><img src="Merkur.png" alt="Mercury" width="85" height="70"></th>
+                    <th>Mean Distance from Sun(million km)</th>
+                    <th> Period of Revolution</th>
+                    <th>Period of Rotation at Equador </th>
+                    <th>Eccentricity of Orbit</th>
+                    <th>Equatorial diameter (km) </th>
+                    <th>Mass</th>
+                    <th>Density</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><h3 id="ss">Mercury</h3></td>
+                    <td>57.9</td>
+                    <td>88 d</td>
+                    <td>59 d</td>
+                    <td>0.206</td>
+                    <td>4,879</td>
+                    <td>0.06</td>
+                    <td>5.4</td>
+                </tr>
+            </tbody>
+        </table>
+      
+        <p>QUICK MERCURY FACTS</p>
+        <ul>
+            <li class="mm">Mercury does not have any moons or rings.</li>
+            <li class="mm">Your weight on Mercury would be 38% of your weight on Earth</li>
+            <li class="mm">A year on Mercury takes 88 Earth days.</li>
+        </ul>
+       <p>DETAILED MERCURY FACTS</p>
+       <div id="planeteTekst">
+           
+        A year on Mercury is just 88 days long. One solar day (the time from noon to noon on the planet’s surface) on Mercury lasts the equivalent of 176 Earth days while the sidereal day (the time for 1 rotation in relation to a fixed point) lasts 59 Earth days.
+        Mercury is the smallest planet in the Solar System.
+        Mercury has wrinkles. As the iron core of the planet cooled and contracted, the surface of the planet became wrinkled. Scientist have named these wrinkles, Lobate Scarps. These Scarps can be up to a mile high and hundreds of miles long.
+        Mercury is only the second hottest planet.The surface of Mercury which faces the Sun sees temperatures of up to 427°C, whilst on the alternate side this can be as low as -173°C. This is due to the planet having no atmosphere to help regulate the temperature.
+        Mercury is the most cratered planet in the Solar System. Unlike many other planets which “self-heal” through natural geological processes, the surface of Mercury is covered in craters. These are caused by numerous encounters with asteroids and comets. Most Mercurian craters are named after famous writers and artists. Any crater larger than 250 kilometres in diameter is referred to as a Basin.
+        Only two spacecraft have ever visited Mercury. Owing to its proximity to the Sun, Mercury is a difficult planet to visit. During 1974 and 1975 Mariner 10 flew by Mercury three times, during this time they mapped just under half of the planet’s surface. On August 3rd 2004, the Messenger probe was launched from Cape Canaveral Air Force Station, this was the first spacecraft to visit since the mid 1970’s.
+        Mercury is named for the Roman messenger to the gods. The exact date of Mercury’s discovery is unknown as it pre-dates its first historical mention, one of the first mentions being by the Sumerians around in 3,000 BC.
+       </div>
+       
+    </body>
+</html>

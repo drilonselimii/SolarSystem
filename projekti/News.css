@@ -1,0 +1,110 @@
+body
+{
+	background-image: url(bg.jpg);
+	background-attachment: fixed;
+	background-position: bottom;
+       
+}
+#kepler
+{
+	opacity: 0.95;
+	border: 3px solid black;
+	border-radius: 10px;
+	width: 40%;
+	display: block;
+	margin-left:5%;
+	margin-right: 70%;
+	
+}
+#caption
+{
+	margin-left: 30%;
+	font-size: 150%;
+	color: lightgray;
+   
+}
+#tabela1
+{
+	margin-left: 75%;
+	color: white;
+	margin-top: 3%;
+	font-size: 110%;
+      border: 3px solid white;
+    
+    background: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    
+}
+#lista
+{
+         
+	position:absolute;
+	color: white;
+	margin-top: -17.2%;
+	margin-left: 46.5%;
+	font-size: 120%;
+       background: linear-gradient(to right, rgba(0,128,128,0), rgba(0,128,128,1));
+         border: 2px solid;
+    padding: 20px; 
+    width: 300px;
+    resize: horizontal;
+    overflow: auto;
+   outline: 2px solid #021420;
+   outline-offset:15px;
+}
+#lajmi
+{
+	color: white;
+   transform: rotateX(10deg);
+}
+#artikulli
+{
+	margin-left: 1%;
+	margin-top: -25%;
+	width: 40%;
+	font-size: 120%;
+	color: white;
+     outline-color: white;
+	outline-style: double;
+       border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(border.png) 50 round;
+   background:url("asteroid.png") no-repeat fixed left; 
+   
+ background: radial-gradient(#17869A, #073F56, #021420);
+
+}
+#planetet
+{
+	border-radius: 10px;
+	margin-left: 22%;
+	color: black;
+	font-size: 130%;
+    background: black;
+	opacity: 0.8;
+}
+#video1
+{
+	position:absolute;
+	margin-left:65%;
+	margin-top:-62%;
+}
+#video2
+{
+	position:absolute;
+	margin-left:70%;
+	margin-top:6.5%;
+}
+#video3
+{
+	position:absolute;
+	margin-left:1%;
+	margin-top:6.5%;
+}
+#video4
+{
+	position:absolute;
+	margin-left:35%;
+	margin-top:6.5%;
+}

@@ -1,0 +1,697 @@
+#sun1
+{
+	height:10%; width:35%;
+	opacity: 0.8;
+	margin-top: 20%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+#sun2
+{
+	height:25%; width:25%;
+	opacity: 0.6;
+	margin-top: -6%;
+	margin-left: 15%;
+}
+#sun3
+{
+	height:40%; width:25%;
+	opacity: 0.9;
+	margin-left: 47%;
+	margin-top: -19%;
+}
+#textsun
+{
+	color: white;
+	float: right;
+	margin-right: 2%;
+	width: 25%;
+	font-size: 110%;
+	margin-top: -38%;
+	position: relative;
+	font-family: calibri;
+        text-align: right;
+	
+}
+#suntitle
+{
+	
+	font-size: 500%;
+	margin: 0;
+}
+#sunButton
+{
+	text-decoration: none;
+	color: #A8733A;
+	font-size: 180%;
+	float: right;
+	margin-right: 8%;
+	margin-top: -8%;
+}
+#sunButton:hover
+{
+	transition-duration: 1s;
+	background: #A8733A;
+	color: white;
+	padding: 0.5%;
+	border-radius: 15px;
+}
+
+#mercury1
+{
+	height:30%; width:50%;
+	opacity: 0.9;
+	margin-top: 30%;
+        margin-left: 20%;
+	
+}
+
+#mercury2
+{
+	height:40%; width:30%;
+	opacity: 0.8;
+	margin-top: 50%;
+	margin-left: -8%;
+        position: absolute;
+}
+#mercury3
+{
+	height:45%; width:30%;
+	opacity: 0.8;
+	margin-left: -15%;
+	margin-top: 21%;
+        position: absolute;
+}
+#textmercury
+{
+	color: white;
+	float: right;
+	margin-right: 72%;
+	width: 25%;
+	font-size: 110%;
+	margin-top: -28%;
+	position: relative;
+	font-family: calibri;
+	
+}
+#mercurytitle {
+ font-size: 500%;
+ width: 300%;
+margin: 0%;
+
+}
+#mercuryButton
+{
+	text-decoration: none;
+	color: #A8733A;
+	font-size: 180%;
+	float: right;
+	margin-right: 50%;
+	margin-top: 6%;
+}
+#mercuryButton:hover
+{
+	transition-duration: 1s;
+	background: #A8733A;
+	color: white;
+	padding: 0.5%;
+	border-radius: 15px;
+}
+
+#venus1
+{
+	height:50%; width:56%;
+	opacity: 0.8;
+	margin-top: 30%;
+        margin-left: 20%;
+	
+}
+
+#venus2
+{
+	height:45%; width:35%;
+	opacity: 0.9;
+	margin-top: 56.5%;
+	margin-left: -42%;
+        position: absolute;
+}
+#venus3
+{
+	height:40%; width:28%;
+	opacity: 0.9;
+	margin-left: -70%;
+	margin-top: 45%;
+        position: absolute;
+}
+#venustitle
+{
+	
+	font-size: 500%;
+	margin: 0;
+}
+#textvenus
+{
+	color: white;
+	float: right;
+	margin-right: 8%;
+	width: 25%;
+	font-size: 110%;
+	margin-top: -28%;
+	position: relative;
+	font-family: calibri;
+        text-align: right;
+	
+}
+#venusButton
+{
+	text-decoration: none;
+	color: #A8733A;
+	font-size: 180%;
+	float: right;
+	margin-right: 9%;
+	margin-top: 10%;
+}
+#venusButton:hover
+{
+	transition-duration: 1s;
+	background: #A8733A;
+	color: white;
+	padding: 0.5%;
+	border-radius: 15px;
+}
+#section3
+{
+margin-bottom: 25%;
+}
+#earth1
+{
+	height:40%;
+        width: 50%;
+	opacity: 0.90;
+	margin-top: 30%;
+        margin-left: 24%;
+	
+}
+
+#earth2
+{
+	height:40%; width:30%;
+	opacity: 0.9;
+	margin-top: 43%;
+	margin-left: -66%;
+        position: absolute;
+}
+#earth3
+{
+	height:40%; width:28%;
+	opacity: 0.9;
+	margin-left: -15%;
+	margin-top: 17%;
+        position: absolute;
+}
+#earthtitle
+{
+	
+	font-size: 500%;
+	margin: 0;
+}
+#textearth
+{
+	color: white;
+	float: right;
+	margin-right: 14.5%;
+	width: 25%;
+	font-size: 110%;
+	margin-top: -28%;
+	position: relative;
+	font-family: calibri;
+        text-align: right;
+}
+#earthButton
+{
+	text-decoration: none;
+	color: #A8733A;
+	font-size: 180%;
+	float: right;
+	margin-right: 3%;
+	margin-top: -3%;
+}
+#earthButton:hover
+{
+	transition-duration: 1s;
+	background: #A8733A;
+	color: white;
+	padding: 0.5%;
+	border-radius: 15px;
+}
+	
+#earth1
+{
+	height:40%;
+        width: 50%;
+	opacity: 0.90;
+	margin-top: 30%;
+        margin-left: 24%;
+	
+}
+
+#earth2
+{
+	height:40%; width:30%;
+	opacity: 0.9;
+	margin-top: 43%;
+	margin-left: -66%;
+        position: absolute;
+}
+#earth3
+{
+	height:40%; width:28%;
+	opacity: 0.9;
+	margin-left: -15%;
+	margin-top: 17%;
+        position: absolute;
+}
+#earthtitle
+{
+	
+	font-size: 500%;
+	margin: 0;
+}
+#textearth
+{
+	color: white;
+	float: right;
+	margin-right: 14.5%;
+	width: 25%;
+	font-size: 110%;
+	margin-top: -28%;
+	position: relative;
+	font-family: calibri;
+        text-align: right;
+}
+#earthButton
+{
+	text-decoration: none;
+	color: #A8733A;
+	font-size: 180%;
+	float: right;
+	margin-right: 3%;
+	margin-top: -3%;
+}
+#earthButton:hover
+{
+	transition-duration: 1s;
+	background: #A8733A;
+	color: white;
+	padding: 0.5%;
+	border-radius: 15px;
+}
+	
+#earth1
+{
+	height:40%;
+        width: 50%;
+	opacity: 0.90;
+	margin-top: 30%;
+        margin-left: 24%;
+	
+}
+
+#earth2
+{
+	height:40%; width:30%;
+	opacity: 0.9;
+	margin-top: 43%;
+	margin-left: -66%;
+        position: absolute;
+}
+#earth3
+{
+	height:40%; width:28%;
+	opacity: 0.9;
+	margin-left: -15%;
+	margin-top: 17%;
+        position: absolute;
+}
+#earthtitle
+{
+	
+	font-size: 500%;
+	margin: 0;
+}
+#textearth
+{
+	color: white;
+	float: right;
+	margin-right: 14.5%;
+	width: 25%;
+	font-size: 110%;
+	margin-top: -28%;
+	position: relative;
+	font-family: calibri;
+        text-align: right;
+}
+#earthButton
+{
+	text-decoration: none;
+	color: #A8733A;
+	font-size: 180%;
+	float: right;
+	margin-right: 3%;
+	margin-top: -3%;
+}
+#earthButton:hover
+{
+	transition-duration: 1s;
+	background: #A8733A;
+	color: white;
+	padding: 0.5%;
+	border-radius: 15px;
+}
+#mars1
+{
+	height:40%;
+        width: 50%;
+	opacity: 0.8;
+	margin-top: 30%;
+        margin-left: 38%;
+	
+}
+
+#mars2
+{
+	height:40%; width:30%;
+	opacity: 0.5;
+	margin-top: 45%;
+	margin-left: -69%;
+        position: absolute;
+}
+#mars3
+{
+	height:40%; width:28%;
+	opacity: 0.6;
+	margin-left: -20%;
+	margin-top: 55%;
+        position: absolute;
+}
+#marstitle
+{
+	
+	font-size: 500%;
+	margin: 0;
+}
+#textmars
+{
+	color: white;
+	float: left;
+	margin-left: 7%;
+	width: 25%;
+	font-size: 110%;
+	margin-top: -30%;
+	position: relative;
+	font-family: calibri;
+       
+}
+#marsButton
+{
+	text-decoration: none;
+	color: #A8733A;
+	font-size: 180%;
+	float: left;
+	margin-left: 3%;
+	margin-top: 8%;
+}
+#marsButton:hover
+{
+	transition-duration: 1s;
+	background: #A8733A;
+	color: white;
+	padding: 0.5%;
+	border-radius: 15px;
+}
+#jupiter1
+{
+	height:35%;
+        width: 35%;
+	opacity: 0.8;
+	margin-top: 30%;
+        margin-left: 7%;
+	
+}
+
+#jupiter2
+{
+	height:40%; width:25%;
+	opacity: 0.8;
+	margin-top: 40%;
+	margin-left: -55%;
+        position: absolute;
+}
+#jupiter3
+{
+	height:40%; width:28%;
+	opacity: 0.8;
+	margin-left: -18%;
+	margin-top: 59%;
+        position: absolute;
+}	
+#jupitertitle
+{
+	
+	font-size: 500%;
+	margin: 0;
+        width: 150%;
+margin-left: -50%;
+}
+#textjupiter
+{
+	color: white;
+	float: right;
+	margin-right: 7%;
+	width: 25%;
+	font-size: 110%;
+	margin-top: -22%;
+	position: relative;
+	font-family: calibri;
+        text-align: right;
+       
+}
+#jupiterButton
+{
+	text-decoration: none;
+	color: #A8733A;
+	font-size: 180%;
+	float: right;
+	margin-right: 8%;
+	margin-top: 8%;
+}
+#jupiterButton:hover
+{
+	transition-duration: 1s;
+	background: #A8733A;
+	color: white;
+	padding: 0.5%;
+	border-radius: 15px;
+}#saturn1
+{
+	height:38%;
+        width: 52%;
+	opacity: 0.8;
+	margin-top: 30%;
+        margin-left: 40%;
+	
+}
+
+#saturn2
+{
+	height:45%; width:35%;
+	opacity: 0.9;
+	margin-top: 46%;
+	margin-left: -77%;
+        position: absolute;
+}
+#saturn3
+{
+	height:40%; width:35%;
+	opacity: 0.6;
+	margin-left: -48%;
+	margin-top: 55%;
+        position: absolute;
+}	
+#saturntitle
+{
+	
+	font-size: 500%;
+	margin: 0;
+        width: 150%;
+
+}
+#textsaturn
+{
+	color: white;
+	float: left;
+	margin-left: 5%;
+	width: 32%;
+	font-size: 110%;
+	margin-top: -32%;
+	position: relative;
+	font-family: calibri;
+        
+       
+}
+#saturnButton
+{
+	text-decoration: none;
+	color: #A8733A;
+	font-size: 180%;
+	float: left;
+	margin-left: 4%;
+	margin-top: 12%;
+}
+#saturnButton:hover
+{
+	transition-duration: 1s;
+	background: #A8733A;
+	color: white;
+	padding: 0.5%;
+	border-radius: 15px;
+}
+#uranus1
+{
+	height:42%;
+        width: 53%;
+	opacity: 0.8;
+	margin-top: 40%;
+        margin-left: -2%;
+	
+}
+
+#uranus2
+{
+	height:38%; width:27%;
+	opacity: 0.6;
+	margin-top: 42%;
+	margin-left: -70%;
+        position: absolute;
+}
+#uranus3
+{
+	height:40%; width:32%;
+	opacity: 0.85;
+	margin-left: -35%;
+	margin-top: 65%;
+        position: absolute;
+}
+#uranustitle
+{
+	
+	font-size: 500%;
+	margin: 0;
+        width: 130%;
+        margin-left: -29%;
+}
+#texturanus
+{
+	color: white;
+	float: right;
+	margin-right: 3%;
+	width: 25%;
+	font-size: 110%;
+	margin-top: -28%;
+	position: relative;
+	font-family: calibri;
+        text-align: right;
+}
+#uranusButton
+{
+	text-decoration: none;
+	color: #A8733A;
+	font-size: 180%;
+	float: right;
+	margin-right: 8%;
+	margin-top: 6%;
+}
+#uranusButton:hover
+{
+	transition-duration: 1s;
+	background: #A8733A;
+	color: white;
+	padding: 0.5%;
+	border-radius: 15px;
+}
+#neptune1
+{
+	height:35%;
+        width: 60%;
+	opacity: 0.7;
+	margin-top: 35%;
+        margin-left: 27%;
+	
+}
+
+#neptune2
+{
+	height:50%; width:35%;
+	opacity: 0.8;
+	margin-top: 28%;
+	margin-left: -50%;
+        position: absolute;
+}
+#neptune3
+{
+	height:40%; width:28%;
+	opacity: 0.9;
+	margin-left: -57%;
+	margin-top: 55%;
+        position: absolute;
+}
+#neptunetitle
+{
+	
+	font-size: 500%;
+	margin: 0;
+        width: 145%;
+}
+#textneptune
+{
+	color: white;
+	float: left;
+	margin-left: 1%;
+	width: 25%;
+	font-size: 110%;
+	margin-top: -35%;
+	position: relative;
+	font-family: calibri;
+       
+}
+#neptuneButton
+{       font-style: bold;
+	text-decoration: none;
+	color: #A8733A;
+	font-size: 180%;
+	float: left;
+	margin-left: 5%;
+	margin-top: -7%;
+}
+#neptuneButton:hover
+{
+	transition-duration: 1s;
+	background: #A8733A;
+	color: white;
+	padding: 0.5%;
+	border-radius: 15px;
+}	
+
+#replace
+{
+	font-size: 150%;
+	color: white;
+	text-align: center;
+}
+#replace button {
+	border-radius: 5px;
+	background-color: #A8733A;
+	font-size: 100%;
+}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Neptune</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="sistemiSolar2.css"/>
+        <style>
+                    
+                    table { color: #333;opacity:0.8;
+                               font-family:  "Lucida Sans Unicode", "Lucida Grande", "Sans-Serif"; 
+                               font-size: 14px;
+                               width: 850px;
+                               border-collapse: collapse;
+                               border-spacing: 0;
+                             box-shadow: 4px 4px 7px #B0C4DE;}
+                    td, th { border: 1px solid #CCC;
+                               height: 30px;}
+                         th {background: #DCDCDC; 
+                              font-weight: bold;}
+                         td {background: #FAFAFA; 
+                              text-align: center;}
+                         #ss{color:black;}
+                         .mm{color:white;}
+                              #submit 
+                             {  background-color: white;
+                                padding:1px 5px 1px 5px;
+                                position:absolute;
+                                margin-left:125%;
+                                margin-top: 0%; 
+                              }
+                        #planetss
+                            {
+                                    position:absolute;
+                                    margin-left:79%;
+                                    margin-top:0%;
+
+                           }
+                           
+                 </style>
+
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("table").hide();
+        alert("The table is now hidden");
+    });
+    $("#show").click(function(){
+        $("table").show();
+        alert("The table is shown");
+    });
+});
+       </script>
+      
+<script>
+$(document).ready(function(){
+    $(".btn1").click(function(){
+        $("iframe").fadeOut(1000);
+    });
+    $(".btn2").click(function(){
+        $("iframe").fadeIn(1000);
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("p").css("background-color", "transparent");
+});
+</script>
+<script>
+    $(document).ready(function() {
+    $("#planetfoto").animate({left: "+=300"}, 2000);
+    $("#planetfoto").animate({left: "-=300"}, 1000);
+});
+    </script>
+    <script>
+$(document).ready(function(){
+    $("h2").bind("click", function(){
+        alert("The title was clicked.");
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("img").click(function(){
+        alert("The image was clicked.");
+    });
+});
+</script>
+
+       
+
+    </head>
+    <body id ="bg">
+        
+        
+        <h2 id="title">Neptune</h2>
+        
+     
+        
+        
+            <img id="planetfoto" src="neptune.png" alt="Neptune" width="250" height="220"/><div class="video">
+			<form method="get">
+                 <input list="planets" name = "planets" id = "planetss">
+                 <datalist id="planets">
+                     <option value = "Mercury"> Mercury </option>
+                     <option value="Venus"> Venus </option>
+                     <option value="Earth">Earth </option>
+                     <option value="Mars">Mars</option>
+                     <option value="Jupiter">Jupiter</option>
+                     <option value="Saturn">Saturn</option>
+                     <option value="Uranus">Uranus</option>
+                     <option value="Neptune">Neptune</option>
+                     <option value="Sun">Sun</option>
+  </datalist>
+    </form>
+            <button id = "submit" onclick="ShkoNeFaqe();">Submit</button>
+            
+             <script>
+                function ShkoNeFaqe(){
+                    var planetz = document.getElementById("planetss").value;
+                    
+                    if(planetz === "Mercury")location = "Mercury.html";
+                    if(planetz === "Venus")location = "Venus.html";
+                    if(planetz === "Earth")location = "Earth.html";
+                    if(planetz === "Mars")location = "Mars.html";
+                    if(planetz === "Jupiter")location = "Jupiter.html";
+                    if(planetz === "Saturn")location = "Saturn.html";
+                    if(planetz === "Uranus")location = "Uranus.html";
+                    if(planetz === "Neptune")location = "Neptune.html";
+                    if(planetz === "Sun")location = "Sun.html";
+            }
+            </script>
+                <button class="btn1">Fade out</button>
+               <button class="btn2">Fade in</button>
+                <iframe width="350" height="250" src="https://www.youtube.com/embed/7wm8Uinm5OM" frameborder="0" allowfullscreen></iframe></div>
+            <div class="video3"><iframe width="350" height="250" src="https://www.youtube.com/embed/dXKaJrQrb2s" frameborder="0" allowfullscreen></iframe></div>
+            
+            <div id="tekst">
+                Neptune is the eighth and farthest known planet from the Sun in the Solar System. In the Solar System, it is<br> the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. Neptune<br> is 17 times the mass of Earth and is slightly more massive than its near-twin Uranus, which is 15 times the<br> mass of Earth and slightly larger than Neptune. Neptune orbits the Sun once every 164.8 years at an average<br> distance of 30.1 astronomical units (4.50×109 km). It is named after the Roman god of the sea and has the<br> astronomical symbol ♆, a stylised version of the god Neptune's trident.
+            </div>
+            <button id="hide">Hide</button>
+        <button id="show">Show</button>
+          <table  border="1" cellspacing="3">
+            <thead>
+                <tr>
+                    <th><img src="neptune.png" alt="Neptune" height="80" width="80"></th>
+                    <th>Mean Distance from Sun(million km)</th>
+                    <th> Period of Revolution</th>
+                    <th>Period of Rotation at Equador </th>
+                    <th>Eccentricity of Orbit</th>
+                    <th>Equatorial diameter (km) </th>
+                    <th>Mass</th>
+                    <th>Density</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><h3 id="ss">Neptune</h3></td>
+                    <td>4,498.3</td>
+                    <td>164.8 y</td>
+                    <td>16 h </td>
+                    <td>0.009</td>
+                    <td>49,528</td>
+                    <td>17.15</td>
+                    <td>1.8</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+
+
+      
+        <p>QUICK NEPTUNE FACTS</p>
+        <ul> 
+            <li class="mm">It takes Neptune 164.8 Earth years to orbit the Sun.</li>
+            <li class="mm">Neptune was discovered by Jean Joseph Le Verrier.</li>
+            <li class="mm">Neptune is the Roman God of the Sea. In Greek, Neptune is called Poseidon.</li>
+            <li class="mm">Neptune has the second largest gravity of any planet.</li>
+            <li class="mm">The largest Neptunian moon, Triton, was discovered just 17 days after Neptune itself was discovered.</li>
+            <li class="mm">Neptune has a storm similar the Great Red Spot on Jupiter.</li>
+            <li class="mm">Neptune also has a second storm called the Small Dark Spot.</li>
+            <li class="mm">Only one spacecraft, the Voyager 2, has flown past Neptune.</li>
+            <li class="mm">Like the other outer planets, Neptune possesses a ring system, though its rings are very faint.</li>
+            <li class="mm">Neptune has 14 known moons.</li>
+            <li class="mm">Neptune has an average surface temperature of -214°C – approximately -353°F.</li>
+        </ul>
+       <p>DETAILED NEPTUNE FACTS</p>
+       <div id="planeteTekst">
+           
+        Neptune was not known to the ancients.It is not visible to the naked eye and was first observed in 1846. Its position was determined using mathematical predictions. It was named after the Roman god of the sea.
+        Neptune spins on its axis very rapidly.Its equatorial clouds take 18 hours to make one rotation. This is because Neptune is not solid body.
+        Neptune is the smallest of the ice giants.Despite being smaller than Uranus, Neptune has a greater mass. Below its heavy atmosphere Uranus is made of layers of hydrogen, helium, and methane gases. They enclose a layer of water, ammonia and methane ice. The inner core of the planet is made of rock.
+        The atmosphere of Neptune is made of hydrogen and helium, with some methane.The methane absorbs red light, which makes the planet appear a lovely blue. High, thin clouds drift in the upper atmosphere.
+        Neptune has a very active climate.Large storms whirl through its upper atmosphere, and high-speed winds track around the planet at up 600 meters per second. One of the largest storms ever seen was recorded in 1989. It was called the Great Dark Spot. It lasted about five years.
+        Neptune has a very thin collection of rings.They are likely made up of ice particles mixed with dust grains and possibly coated with a carbon-based substance.
+       Neptune has 14 moons.The most interesting moon is Triton, a frozen world that is spewing nitrogen ice and dust particles out from below its surface. It was likely captured by the gravitational pull of Neptune. It is probably the coldest world in the solar system.
+        Only one spacecraft has flown by Neptune.In 1989, the Voyager 2 spacecraft swept past the planet. It returned the first close-up images of the Neptune system. The NASA/ESA Hubble Space Telescope has also studied this planet, as have a number of ground-based telescopes.
+       </div>
+       
+    </body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Mars</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="sistemiSolar2.css"/>
+         <style>
+                    
+                    table { color: #333;opacity:0.8;
+                               font-family:  "Lucida Sans Unicode", "Lucida Grande", "Sans-Serif"; 
+                               font-size: 14px;
+                               width: 850px;
+                               border-collapse: collapse;
+                               border-spacing: 0;
+                         box-shadow: 4px 4px 7px #B0C4DE;}
+                    td, th { border: 1px solid #CCC;
+                               height: 30px;}
+                         th {background: #DCDCDC; 
+                              font-weight: bold;}
+                         td {background: #FAFAFA; 
+                              text-align: center;}
+                         .mm{color:white;}
+                         #ss{color:black;}
+						     #submit 
+                             {  background-color: white;
+                                padding:1px 5px 1px 5px;
+                                position:absolute;
+                                margin-left:125%;
+                                margin-top: 0%; 
+                              }
+                        #planetss
+                            {
+                                    position:absolute;
+                                    margin-left:79%;
+                                    margin-top:0%;
+
+                           }
+                           
+                           
+                 </style>
+                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("table").hide();
+        alert("The table is now hidden");
+    });
+    $("#show").click(function(){
+        $("table").show();
+        alert("The table is shown");
+    });
+});
+       </script>
+      
+<script>
+$(document).ready(function(){
+    $(".btn1").click(function(){
+        $("iframe").fadeOut(1000);
+    });
+    $(".btn2").click(function(){
+        $("iframe").fadeIn(1000);
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("p").css("background-color", "transparent");
+});
+</script>
+<script>
+    $(document).ready(function() {
+    $("#planetfoto").animate({left: "+=300"}, 2000);
+    $("#planetfoto").animate({left: "-=300"}, 1000);
+});
+    </script>
+    <script>
+$(document).ready(function(){
+    $("h2").bind("click", function(){
+        alert("The title was clicked.");
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("img").click(function(){
+        alert("The image was clicked.");
+    });
+});
+</script>
+
+       
+
+    </head>
+   <body id ="bg">
+        
+        
+        <h2 id="title">Mars</h2>
+       
+      
+        
+            <img id="planetfoto" src="marsi.ico" alt="Mars" /><div class="video">
+			 <form method="get">
+                 <input list="planets" name = "planets" id = "planetss">
+                 <datalist id="planets">
+                     <option value = "Mercury"> Mercury </option>
+                     <option value="Venus"> Venus </option>
+                     <option value="Earth">Earth </option>
+                     <option value="Mars">Mars</option>
+                     <option value="Jupiter">Jupiter</option>
+                     <option value="Saturn">Saturn</option>
+                     <option value="Uranus">Uranus</option>
+                     <option value="Neptune">Neptune</option>
+                     <option value="Sun">Sun</option>
+  </datalist>
+    </form>
+            <button id = "submit" onclick="ShkoNeFaqe();">Submit</button>
+            
+             <script>
+                function ShkoNeFaqe(){
+                    var planetz = document.getElementById("planetss").value;
+                    
+                    if(planetz === "Mercury")location = "Mercury.html";
+                    if(planetz === "Venus")location = "Venus.html";
+                    if(planetz === "Earth")location = "Earth.html";
+                    if(planetz === "Mars")location = "Mars.html";
+                    if(planetz === "Jupiter")location = "Jupiter.html";
+                    if(planetz === "Saturn")location = "Saturn.html";
+                    if(planetz === "Uranus")location = "Uranus.html";
+                    if(planetz === "Neptune")location = "Neptune.html";
+                    if(planetz === "Sun")location = "Sun.html";
+            }
+            </script>
+                <button class="btn1">Fade out</button>
+         <button class="btn2">Fade in</button>
+                <iframe width="350" height="250" src="https://www.youtube.com/embed/JYDOCgpRHN0" frameborder="0" allowfullscreen></iframe></div>
+            
+            <div class="video3"><iframe width="350" height="250" src="https://www.youtube.com/embed/Dzu8yXE4KNg" frameborder="0" allowfullscreen></iframe></div>
+            
+            <div id="tekst">
+                Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, after Mercury.<br> Named after the Roman god of war, it is often referred to as the "Red Planet" because the iron oxide<br> prevalent on its surface gives it a reddish appearance. Mars is a terrestrial planet with a thin atmosphere,<br> having surface features reminiscent both of the impact craters of the Moon and the valleys, deserts, and<br> polar ice caps of Earth.
+  
+            </div>
+            <button id="hide">Hide</button>
+        <button id="show">Show</button>
+         <table  border="1" cellspacing="3">
+            <thead>
+                <tr>
+                    <th><img src="marsi.ico"  alt="Marsi" width="80" height="80"></th>
+                    <th>Mean Distance from Sun(million km)</th>
+                    <th> Period of Revolution</th>
+                    <th>Period of Rotation at Equador </th>
+                    <th>Eccentricity of Orbit</th>
+                    <th>Equatorial diameter (km) </th>
+                    <th>Mass</th>
+                    <th>Density</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><h3 id="ss">Mars</h3></td>
+                    <td>227.9</td>
+                    <td>687 d</td>
+                    <td>24 h 56 m 4 s</td>
+                    <td>0.093</td>
+                    <td>6,794</td>
+                    <td>0.11</td>
+                    <td>3.9</td>
+                </tr>
+            </tbody>
+        </table>
+
+      
+        <p>QUICK MARS FACTS</p>
+        <ul>
+            <li class="mm">Mars is the fourth planet from the Sun and last of the terrestrial planets and is around 227,940,000 km<br> from the Sun.</li>
+            <li class="mm">The planet is named after Mars, the Roman god of war. It was known to the ancient Greeks as Ares, their<br> god of war. </li>
+            <li class="mm">Only 16 of the 39 Mars missions have been successful.</li>
+            <li class="mm">The tallest mountain known in the solar system is on Mars.</li>
+            <li class="mm">The two moons of Mars, Phobos and Deimos, were written about in the book ‘Gulliver’s Travels’ by<br> author Jonathan Swift – 151 years before they were discovered.</li>
+        </ul>
+        <p>DETAILED MARS FACTS</p>
+        
+        <div id="planeteTekst">Mars and Earth have approximately the same landmass.Even though Mars has only 15% of the Earth’s volume and just over 10% of the Earth’s mass, around two thirds of the Earth’s surface is covered in water. Martian surface gravity is only 37% of the Earth’s (meaning you could leap nearly three times higher on Mars).
+        Mars is home to the tallest mountain in the solar system.Olympus Mons, a shield volcano, is 21km high and 600km in diameter. Despite having formed over billions of years, evidence from volcanic lava flows is so recent many scientists believe it could still be active.
+        Only 18 missions to Mars have been successful.As of September 2014 there have been 40 missions to Mars, including orbiters, landers and rovers but not counting flybys. The most recent arrivals include the Mars Curiosity mission in 2012, the MAVEN mission, which arrived on September 22, 2014, followed by the Indian Space Research Organization’s MOM Mangalyaan orbiter, which arrived on September 24, 2014. 
+        Mars has the largest dust storms in the solar system.They can last for months and cover the entire planet. The seasons are extreme because its elliptical (oval-shaped) orbital path around the Sun is more elongated than most other planets in the solar system.
+         Pieces of Mars have fallen to Earth.Scientists have found tiny traces of Martian atmosphere within meteorites violently ejected from Mars, then orbiting the solar system amongst galactic debris for millions of years,before crash landing on Earth. This allowed scientists to begin studying Mars prior to launching space missions.
+       There are signs of liquid water on Mars.For years Mars has been known to have water in the form of ice. The first signs of trickling water are dark stripes or stains on crater wall and cliffs seen in satellite images. Due to Mars’ atmosphere this water would have to be salty to prevent it from freezing or vaporising.
+        One day Mars will have a ring.In the next 20-40 million years Mars’ largest moon Phobos will be torn apart by gravitational forces leading to the creation of a ring that could last up to 100 million years.</div>
+                 
+   
+   </body>
+</html>

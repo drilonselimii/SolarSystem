@@ -1,0 +1,136 @@
+#myImage
+{
+float: right;
+position: relative;
+margin-top: -41%;
+margin-right: 10%;
+cursor: pointer;
+}
+body
+{
+background-image: url('bg1.jpg');
+background-attachment: fixed;
+background-size: 100%;
+background-position: bottom;
+
+}
+
+#logo
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	margin-top: 25%;
+}
+#beyondLimits
+{
+	margin-top: 0.8%;
+	text-align: center;
+	color: lightgray;
+	
+	
+}
+span 
+{
+margin-left: 93%;
+}
+span a
+{
+	font-size: 140%;
+margin-left: 1%;
+display: inline-block;
+color: white;
+}
+.gjuha
+{
+color: white;
+}
+#anglisht
+{
+
+text-decoration: none;
+}
+input[type=text] {
+ width: 30px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: lightgray;
+    background-image: url('searchicon.png');
+    background-position: relative; 
+    background-repeat: no-repeat;
+    background-size: 25px 33px;
+    padding: 8px 0px 8px 29px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    position: absolute;
+    top: 6%;
+    margin-left: 1%
+}
+     
+input[type=text]:focus {
+    width: 28%; 
+}
+address
+{
+
+font-size: 1.1em;
+color: white;
+}
+address a
+{
+font-style: italic;
+text-decoration: none;
+}
+pre
+{
+color: white;
+font-size: 1.2em;
+}
+#section4
+{
+padding-bottom: 10%;
+}
+#newslogo
+{
+	
+	width: 27%;
+	opacity: 0.7;
+	display: block;
+	margin-left: 10%;
+	margin-top: 10%;
+}
+#quizlogo
+{
+	display: block;
+	width: 20%;
+	opacity: 0.7;
+	margin-left: 60%;
+	margin-top: -11.5%;
+}
+#newslogo:hover
+{	
+	cursor: pointer;
+	
+}
+#quizlogo:hover
+{
+	
+	cursor: pointer;
+	
+}
+.regjistrimi
+{
+	text-decoration: none;
+	color: lightgray;
+	
+	
+}
+#logini
+{
+	position: absolute;
+	margin-left: 0.8%;
+	margin-top: 7%;
+}

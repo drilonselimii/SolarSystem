@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Sun</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="sistemiSolar2.css"/>
+        <style>
+                   
+                    table { color: #333;opacity:0.8;
+                               font-family:  "Lucida Sans Unicode", "Lucida Grande", "Sans-Serif"; 
+                               font-size: 14px;
+                               width: 850px;
+                               border-collapse: collapse;
+                               border-spacing: 0;
+                              border-style: none;
+                              box-shadow: 4px 4px 7px #B0C4DE;
+                               
+                             }
+                    td, th { border: 1px solid #CCC;
+                               height: 30px;}
+                         th {background: #DCDCDC; 
+                              font-weight: bold;}
+                         td {background: #FAFAFA; 
+                              text-align: center;}
+                         #ss{color:black;}
+                         .mm{color:white;
+                                 list-style-type: square;
+                             }
+                           
+                           mark{
+                               background-color: white;
+                           }
+                               #submit 
+                             {  background-color: white;
+                                padding:1px 5px 1px 5px;
+                                position:absolute;
+                                margin-left:125%;
+                                margin-top: 0%; 
+                              }
+                        #planetss
+                            {
+                                    position:absolute;
+                                    margin-left:79%;
+                                    margin-top:0%;
+
+                           }
+                           
+                     
+                 </style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("table").hide();
+        alert("The table is now hidden");
+    });
+    $("#show").click(function(){
+        $("table").show();
+        alert("The table is shown");
+    });
+});
+       </script>
+      
+<script>
+$(document).ready(function(){
+    $(".btn1").click(function(){
+        $("iframe").fadeOut(1000);
+    });
+    $(".btn2").click(function(){
+        $("iframe").fadeIn(1000);
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("p").css("background-color", "transparent");
+});
+</script>
+<script>
+    $(document).ready(function() {
+    $("#planetfoto").animate({left: "+=300"}, 2000);
+    $("#planetfoto").animate({left: "-=300"}, 1000);
+});
+    </script>
+    <script>
+$(document).ready(function(){
+    $("h2").bind("click", function(){
+        alert("The title was clicked.");
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("img").click(function(){
+        alert("The image was clicked.");
+    });
+});
+</script>
+       
+
+    </head>
+    <body id ="bg">
+        
+        
+        <h2 id="title">S u n</h2>
+        
+        
+            <img id="planetfoto" src="sun.png" alt="Sun" width="250" height="230"/><div class="video">
+			<form method="get">
+                 <input list="planets" name = "planets" id = "planetss">
+                 <datalist id="planets">
+                     <option value = "Mercury"> Mercury </option>
+                     <option value="Venus"> Venus </option>
+                     <option value="Earth">Earth </option>
+                     <option value="Mars">Mars</option>
+                     <option value="Jupiter">Jupiter</option>
+                     <option value="Saturn">Saturn</option>
+                     <option value="Uranus">Uranus</option>
+                     <option value="Neptune">Neptune</option>
+                     <option value="Sun">Sun</option>
+  </datalist>
+    </form>
+            <button id = "submit" onclick="ShkoNeFaqe();">Submit</button>
+            
+             <script>
+                function ShkoNeFaqe(){
+                    var planetz = document.getElementById("planetss").value;
+                    
+                    if(planetz === "Mercury")location = "Mercury.html";
+                    if(planetz === "Venus")location = "Venus.html";
+                    if(planetz === "Earth")location = "Earth.html";
+                    if(planetz === "Mars")location = "Mars.html";
+                    if(planetz === "Jupiter")location = "Jupiter.html";
+                    if(planetz === "Saturn")location = "Saturn.html";
+                    if(planetz === "Uranus")location = "Uranus.html";
+                    if(planetz === "Neptune")location = "Neptune.html";
+                    if(planetz === "Sun")location = "Sun.html";
+            }
+            </script>
+                <button class="btn1">Fade out</button>
+               <button class="btn2">Fade in</button>
+               
+                <iframe width="350" height="250" src="https://www.youtube.com/embed/0WW1HN0iG0M" frameborder="0" allowfullscreen></iframe></div>
+            <div class="video3"><iframe width="350" height="250" src="https://www.youtube.com/embed/2U3ucaVzRqQ" frameborder="0" allowfullscreen></iframe></div>
+            
+            <div id="tekst">
+                The Sun is the star at the center of the Solar System. It is a nearly perfect sphere of hot plasma, with internal<br> convective motion that generates a magnetic field via a dynamo process. It is by far the most important<br> source of energy for life on Earth. Its diameter is about 109 times that of Earth, and its mass is about<br> 330,000 times that of Earth, accounting for about 99.86% of the total mass of the Solar System. About three<br> quarters of the Sun's mass consists of hydrogen (~73%); the rest is mostly helium (~25%), with much smaller<br> quantities of heavier elements, including oxygen, carbon, neon, and iron.
+            </div>
+            <button id="hide">Hide</button>
+        <button id="show">Show</button>
+          <table  border="1" cellspacing="3">
+            <thead>
+                <tr>
+                    <th><img src="sun.png" alt="Sun" width="80" height="70"></th>
+                    <th>Mean Distance from Sun(million km)</th>
+                    <th> Period of Revolution</th>
+                    <th>Period of Rotation at Equador </th>
+                    <th>Eccentricity of Orbit</th>
+                    <th>Equatorial diameter (km) </th>
+                    <th>Mass</th>
+                    <th>Density</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><h3 id="ss">Sun</h3></td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>27 d</td>
+                    <td>--</td>
+                    <td>1,392,00</td>
+                    <td>333,000.00</td>
+                    <td>1.4</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+
+
+          <dl>
+              <dt><p>QUICK SUN FACTS</p></dt>
+              <dd><ul> 
+            <li class="mm">The Sun accounts for 99.86% of the mass in the solar system.</li>
+            <li class="mm">Over one million Earth’s could fit inside the Sun. </li>
+            <li class="mm">One day the Sun will consume the Earth.</li>
+            <li class="mm">The energy created by the Sun’s core is nuclear fusion.</li>
+            <li class="mm">The Sun is almost a perfect sphere.</li>
+            <li class="mm">The Sun is travelling at 220 km per second.</li>
+            <li class="mm">The Sun will eventually be about the size of Earth.</li>
+            <li class="mm">It takes eight minutes for light reach Earth from the Sun. </li>
+            <li class="mm">The Sun is halfway through its life.</li>
+            <li class="mm">The Sun rotates in the opposite direction to Earth.</li>
+            <li class="mm">The Sun has a powerful magnetic field. </li>
+            <li class="mm">Temperatures inside the Sun can reach 15 million degrees Celsius.</li>
+            <li class="mm">The atmosphere of the Sun is composed of three layers: the photosphere, the chromosphere, and the<br> corona.</li>
+            <li class="mm">The Sun is classified as a yellow dwarf star.</li>
+            <li class="mm">The Aurora Borealis and Aurora Australis are caused by the interaction of solar winds with Earth’s<br> atmosphere.</li>
+                  </ul></dd>
+                  
+                  <dt>  <p> DETAILED SUN FACTS</p></dt> 
+                  
+                  
+                  <dd><div id="planeteTekst"><mark><q>One million Earths could fit inside the Sun.</q></mark>If a hollow Sun was filled up with spherical Earths then around 960,000 would fit inside. On the other hand if these Earths were squished inside with no wasted space<br> then around 1,300,000 would fit inside.The Sun’s surface area is 11,990 times that of the Earth’s.
+        The Sun contains 99.86% of the mass in the Solar System. The mass of the Sun is approximately 330,000 times greater than that of Earth. It is almost three quarters Hydrogen, whilst most of the remaining mass is Helium.
+        The Sun is an almost perfect sphere.There is only a 10 kilometre difference in its polar diameter compared to its equatorial diameter. Considering the vast expanse of the Sun, this means it is the closest thing to a perfect sphere that has been observed in nature.
+       The temperature inside the Sun can reach 15 million degrees Celsius. At the Sun’s core, energy is generated by nuclear fusion, as Hydrogen converts to Helium. Because hot objects generally expand, the Sun would explode like a giant bomb if it weren’t for its enormous gravitational force. The temperature on the surface of the Sun is closer to 5,600 degrees Celsius.
+        Eventually, the Sun will consume the Earth. When all the Hydrogen has been burned, the Sun will continue for about 130 million more years, burning Helium, during which time it will expand to the point that it will engulf Mercury and Venus and the Earth. At this stage it will have become a red giant
+        The Sun will one day be about the size of Earth. After its red giant phase, the Sun will collapse, retaining its enormous mass, but containing the approximate volume of our planet. When this happens, it will be called a white dwarf.
+        Light from the Sun takes eight minutes to reach Earth. With a mean average distance of 150 million kilometres from Earth and with light travelling at 300,000 kilometres per second, dividing one by the other gives us an approximate time of 500 seconds, or eight minutes and 20 seconds. Although this energy<br> reaches Earth in a few minutes, it will already have taken millions of years to travel from the Sun’s core to its surface.
+        The Sun travels at 220 kilometres per second. The Sun is 24,000-26,000 light years from the galactic centre and it takes the Sun 225-250 million years to complete an orbit of the centre of the Milky Way.
+        The distance from the Sun to Earth changes throughout the year. Because the Earth travels on an elliptical orbit around the Sun, the distance between the two bodies varies from 147 to 152 million kilometres. The distance between the Earth and the Sun is called an <abbr title="Astronomical Unit "><mark>AU</mark></abbr>.
+        The Sun is middle-aged. At around 4.5 billion years old, the Sun has already burned off about half of its store of Hydrogen. It has enough left to continue to burn Hydrogen for approximately another 5 billion years. The Sun is currently a type of star known as a Yellow Dwarf   
+        The Sun has a very strong magnetic field. Solar flares occur when magnetic energy is released by the Sun during magnetic storms, which we see as sunspots. In sunspots, the magnetic lines are twisted and they spin, much like a tornado would on Earth.  
+        The Sun generates solar wind. This is a stream of charged particles, which travels through the Solar System at approximately 450 kilometres per second. Solar wind occurs where the magnetic field of the Sun extends into space instead of following its surface.  
+                      </div> </dd>  </dl>
+        
+    </body>
+</html>
+

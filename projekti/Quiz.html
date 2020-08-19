@@ -1,0 +1,72 @@
+    <!DOCTYPE html>
+    <html>
+<head>
+    
+    <title>SolarSystem's Quiz</title>
+    <link rel="stylesheet" href="Quiz.css">
+    <script src="Quiz.js"></script>
+    
+</head>
+
+<body>
+    <h1 id="title">Q U I Z</h1>
+    <img id="ikona" src="ssIkona.png">
+    
+    <form id="quiz" name="quiz">
+        <ol>
+            <li> <p>What is the closest planet to the sun?</p>
+        <input id="mc" type="radio" name="question1" value="Mercury">Mercury<br>
+        <input id="mc" type="radio" name="question1" value="Uranus">Uranus<br>
+        <input id="mc" type="radio" name="question1" value="Earth">Earth<br> </li>
+        
+            <li> <p>What is the name of the 2nd biggest planet in our solar system?</p>
+        <input id="mc" type="radio" name="question2" value="Uranus">Uranus<br>
+        <input id="mc" type="radio" name="question2" value="Jupiter">Jupiter<br>
+        <input id="mc" type="radio" name="question2" value="Saturn">Saturn<br></li>
+        
+            <li><p>Which planet has the shortest day?</p>
+        <input id="mc" type="radio" name="question3" value="Neptune">Neptune<br>
+        <input id="mc" type="radio" name="question3" value="Jupiter">Jupiter<br>
+        <input id="mc" type="radio" name="question3" value="Venus">Venus<br></li>
+        
+            <li> <p>Earth is located in which galaxy?</p>
+        <input id="mc" type="radio" name="question4" value="Andromeda">Andromeda<br>
+        <input id="mc" type="radio" name="question4" value="Sunflower Galaxy">Sunflower Galaxy<br>
+        <input id="mc" type="radio" name="question4" value="Milky Way">Milky Way<br></li>
+        
+            <li> <p>What planet is known as the red planet?</p>
+        <input id="mc" type="radio" name="question5" value="Neptune">Neptune<br>
+        <input id="mc" type="radio" name="question5" value="Mercury">Mercury<br>
+        <input id="mc" type="radio" name="question5" value="Mars">Mars<br> </li>
+        
+            <li> <p>Which planet has the most visible rings?</p>
+        <input id="mc" type="radio" name="question6" value="Saturn">Saturn<br>
+        <input id="mc" type="radio" name="question6" value="Venus">Venus<br>
+        <input id="mc" type="radio" name="question6" value="Jupiter">Jupiter<br> </li>
+        
+            <li> <p>Which planet has the highest mountain and volcanoes in the solar system?</p>
+        <input id="mc" type="radio" name="question7" value="Mars">Mars<br>
+        <input id="mc" type="radio" name="question7" value="Earth">Earth<br>
+        <input id="mc" type="radio" name="question7" value="Mercury">Mercury<br> </li>
+        
+            <li> <p>What planet is famous for its big red spot?</p>
+        <input id="mc" type="radio" name="question8" value="Uranus">Uranus<br>
+        <input id="mc" type="radio" name="question8" value="Jupiter">Jupiter<br>
+        <input id="mc" type="radio" name="question8" value="Neptune">Neptune<br> </li>
+        </ol>
+        
+        <input id="button" type="button" value="Check your result!" onclick="check()">
+        
+        
+    </form>
+    
+    <div id="after_submit" >
+        <p id="message"></p>
+        <p id="number_correct"></p>
+        
+    </div>
+    
+    
+    
+</body>
+    </html>

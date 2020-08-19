@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Dielli</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="sistemiSolar2.css"/>
+        <style>
+                    
+                    table { color: #333; opacity: 0.8;
+                               font-family:  "Lucida Sans Unicode", "Lucida Grande", Sans-Serif; 
+                               font-size: 14px;
+                               width: 850px;
+                               border-collapse: collapse;
+                               border-spacing: 0;
+                             box-shadow: 4px 4px 7px #B0C4DE;}
+                    td, th { border: 1px solid #CCC;
+                               height: 30px;}
+                         th {background: #DCDCDC; 
+                              font-weight: bold;}
+                         td {background: #FAFAFA; 
+                              text-align: center;}
+                         #ss{color:black;}
+                         .mm{color:white;
+                             list-style-type: square;
+                         font-family:  "Lucida Sans Unicode", "Lucida Grande", Sans-Serif; }
+                         mark{background-color: white;}
+                                 #submit 
+                             {  background-color: white;
+                                padding:1px 5px 1px 5px;
+                                position:absolute;
+                                margin-left:125%;
+                                margin-top: 0%; 
+                              }
+                        #planetss
+                            {
+                                    position:absolute;
+                                    margin-left:79%;
+                                    margin-top:0%;
+
+                           }
+                 </style>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("table").hide();
+        alert("The table is now hidden");
+    });
+    $("#show").click(function(){
+        $("table").show();
+        alert("The table is shown");
+    });
+});
+       </script>
+      
+<script>
+$(document).ready(function(){
+    $(".btn1").click(function(){
+        $("iframe").fadeOut(1000);
+    });
+    $(".btn2").click(function(){
+        $("iframe").fadeIn(1000);
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("p").css("background-color", "transparent");
+});
+</script>
+<script>
+    $(document).ready(function() {
+    $("#planetfoto").animate({left: "+=300"}, 2000);
+    $("#planetfoto").animate({left: "-=300"}, 1000);
+});
+    </script>
+    <script>
+$(document).ready(function(){
+    $("h2").bind("click", function(){
+        alert("The title was clicked.");
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("img").click(function(){
+        alert("The image was clicked.");
+    });
+});
+</script>
+
+       
+
+    </head>
+            <body id="bg" >
+        
+         
+          <h2 id="title" >Dielli</h2>
+        
+          <img id="planetfoto" src="sun.png" alt="Dielli"  /><div class="video">
+		  <form method="get">
+     <input list="planets" name = "planets" id = "planetss">
+     <datalist id="planets">
+     <option value ="Mercury">
+     <option value="Venus">
+     <option value="Earth">
+     <option value="Mars">
+     <option value="Jupiter">
+     <option value="Saturn">
+     <option value="Uranus">
+     <option value="Neptune">
+     <option value="Sun">
+  </datalist>
+    </form>
+            <button id = "submit" onclick="ShkoNeFaqe();">Submit</button>
+            <script>
+                function ShkoNeFaqe(){
+                    var planetz = document.getElementById("planetss").value;
+                    
+                    if(planetz === "Mercury")location = "Mercury.html";
+                    if(planetz === "Venus")location = "Venus.html";
+                    if(planetz === "Earth")location = "Earth.html";
+                    if(planetz === "Mars")location = "Mars.html";
+                    if(planetz === "Jupiter")location = "Jupiter.html";
+                    if(planetz === "Saturn")location = "Saturn.html";
+                    if(planetz === "Uranus")location = "Uranus.html";
+                    if(planetz === "Neptune")location = "Neptune.html";
+                    if(planetz === "Sun")location = "Sun.html";
+            }
+            </script>
+                <button class="btn1">Fade out</button>
+                <button class="btn2">Fade in</button>
+              <iframe width="350" height="250" src="https://www.youtube.com/embed/0WW1HN0iG0M" frameborder="0" allowfullscreen></iframe></div>
+            <div class="video3"><iframe width="350" height="250" src="https://www.youtube.com/embed/2U3ucaVzRqQ" frameborder="0" allowfullscreen></iframe></div>
+            <div id="tekst">
+                Dielli (në Greqisht: Helios, në Latinisht: Sol) është ylli në qendër të Sistemit Diellor dhe është burimi më i rëndësishëm për energji në Tokë. Ka një formë sferike pothuajse perfekte dhe gjendja e tij agregate është plazma. Diametri i tij është 109 herë më i madh se i Tokës, dhe ka nje masë rreth 330,000 herë më të madhe se Toka. Ai perfshin rreth 99.86% të masës totale të Sistemit Diellor. Rreth tre të katërtat e masës së Diellit perbëhen nga hidrogjeni; pjesa tjetër është më së shumti helium.
+            </div>
+            
+            <button id="hide">Hide</button>
+             <button id="show">Show</button>
+          <table  border="1" cellspacing="3">
+            <thead>
+                <tr>
+                    <th><img src="sun.png" alt="Dielli" width="80" height="70"></th>
+                    <th>Distanca nga Dielli (milion km)</th>
+                    <th> Koha e Rrotullimit</th>
+                    <th>Koha e rrotullimit ne Ekuator </th>
+                    <th>Jashtëqendërsia e Orbitit</th>
+                    <th>Diametri ekuatorial(km) </th>
+                    <th>Masa</th>
+                    <th>Densiteti</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><h3 id="ss">Dielli</h3></td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>27 d</td>
+                    <td>--</td>
+                    <td>1,392,00</td>
+                    <td>333,000.00</td>
+                    <td>1.4</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+
+
+      
+        <p>FAKTE T&Euml; SHPEJTA P&Euml;R DIELLIN</p>
+        <ul> 
+            <li class="mm">Dielli llogarit&euml; 99.86% t&euml; mas&euml;s n&euml; Sistemin Diellor.</li>
+            <li class="mm">M&euml; shum&euml; se nj&euml; milion Toka i z&euml; brenda n&euml; Diell.</li>
+            <li class="mm">Nj&euml; dit&euml; Dielli do t&euml; konsumoj&euml; Tok&euml;n.</li>
+            <li class="mm">Energjia e krijuar nga berthama e Diellit &euml;sht&euml; fuzion b&euml;rthamor.</li>
+            <li class="mm">Dielli &euml;sht&euml; gati nj&euml; sfer&euml; perfekte.</li>
+            <li class="mm"> Dielli udh&euml;ton deri 220 km p&euml;r sekond.</li>
+            <li class="mm">Dielli eventualisht do t&euml; b&euml;het sa madh&euml;sia e Tok&euml;s.</li> 
+            <li class="mm">Dielli &euml;sht&euml; te gjysma e jet&euml;s s&euml; tij.</li>
+            <li class="mm">Dielli rrotullohet n&euml; kah t&euml; kund&euml;rt me Tok&euml;n.</li>
+            <li class="mm">Dielli ka fush&euml; magnetike t&euml; fuqishme.</li>           
+            <li class="mm">Dielli klasifikohet si yll xhuxh&euml; i verdh&euml;.</li>
+            
+        </ul>
+        
+        <p>FAKTE T&Euml; DETAJUARA P&Euml;R DIELLIN</p>
+        
+        <div id="planeteTekst"><mark><q>Nj&euml; milion Toka mund ti z&euml; brenda Diellit.</q> </mark>N&euml;se nj&euml; grop&euml;
+            Diellit do t&euml; mbushej me Toka sferike at&euml;her&euml; rreth 960,00 mund ti zinte brenda.
+            N&euml; an&euml;n tjet&euml;r n&euml;se k&euml;to Toka do t&euml; mund t&euml; futeshin brenda pa asnj&euml;
+            hap&euml;sir&euml; mes tyre at&euml;her&euml; rreth 1,300,000 mund ti zinte brenda.
+            Sip&euml;rfaqja e Diellit &euml;sht&euml; 11,990 her&euml; sa ajo e Tok&euml;s.
+        
+        
+        Dielli p&euml;rb&euml;n 99.86% t&euml; mas&euml;s s&euml; Sistemit Diellor.
+              Masa e Diellit &euml;sht&euml; p&euml;raf&euml;rsisht 330,00 her&euml; m&euml; 
+              e madhe se ajo e Tok&euml;s. &euml;sht&euml; gati 3 qerek hidrogjen, nd&euml;rsa shumica e mas&euml;s s&euml; mbetur &euml;sht&euml; Helium.
+        
+        
+        Dielli &euml;sht&euml; gati nj&euml; sfer&euml; perfekte. Ekziston vet&euml;m
+            nj&euml; diference 10 kilomet&euml;rshe n&euml; diametrin polar t&euml; tij krahasuar me diametrin e tij ekuatorial.
+            Duke konsideruar hap&euml;sir&euml;n e madhe t&euml; Diellit, kjo do t&euml; thot&euml; se &euml;sht&euml; gj&euml;sendi m&euml; i af&euml;rt i nj&euml; sfere perfekte q&euml; ka qen&euml;
+            i v&euml;zhguar n&euml; natyr&euml;.
+       
+        
+        Temperatura brenda Diellit mund t&euml; arrij 15 milion grad&euml; Celsius.
+            N&euml; b&euml;rtham&euml;n e Diellit, energjia &euml;sht&euml; gjeneruar nga fizioni
+            b&euml;rthamor, derisa Hidrogjeni konvertohet n&euml; Helium.
+            Sepse objektet e nxehta p&euml;rgjith&euml;sisht zgjerohen, Dielli mund t&euml; eksplodoj sikur nj&euml; bomb&euml;
+            gjigande sikur t&euml; mos ishte p&euml;r forcen e tij gravitacionale.
+               Temperatura n&euml; sip&euml;rfaqen e Diellit &euml;sht&euml; diku rreth 5,600 grad&euml; Celsius.
+        
+        
+        Eventualisht, Dielli do t&euml; konsumoj&euml; Tok&euml;n. Kur i t&euml;r&euml; Hidrogjeni do t&euml; digjet, Dielli do t&euml; vazhdoj p&euml;r rreth 130
+            milion vite m&euml; shum&euml;,duke digjur Heliumin, gjat&euml; k&euml;saj kohe do t&euml; zgjerohet deri te nj&euml; pik&euml; q&euml; do t&euml;
+            gllab&euml;roj Merkurin, Vener&euml;n dhe Tok&euml;n.
+            N&euml; k&euml;t&euml; pik&euml; ai mund t&euml; jet&euml; b&euml;r&euml; nj&euml; gjigand i kuq.
+        
+        
+        Dielli nj&euml; dit&euml; do t&euml; b&euml;het sa madh&euml;sia e Tok&euml;s. 
+            Pas faz&euml;s s&euml; tij gjigande t&euml; kuqe, Dielli do t&euml; shkat&euml;rrohet duke mbajtur mas&euml;n
+            e tij, por duke pasur p&euml;rafersisht volumin e planetit ton&euml;.
+         Kur kjo ndodh&euml;, do t&euml; quhet nj&euml; xhuxh i bardh&euml;.
+       
+        
+        
+        Drita prej Diellit b&euml;n tet&euml; minuta p&euml;r ta arritur Tok&euml;n. 
+            Me nj&euml; distanc&euml; mesatare prej 150 milion kilometra nga Toka dhe me nj&euml; 
+            shpejt&euml;si t&euml; drit&euml;s prej 300,000 kilometra n&euml; sekond, duke e ndar&euml; nj&euml; 
+            prej t&euml; tjer&euml;ve na jep neve nj&euml; koh&euml; p&euml;raf&euml;rsisht prej 500 sekonda ose 8 
+            minuta dhe 20 sekonda. Edhe pse kjo energji e arrin Token n&euml; disa minuta, do t&euml; kishte marr&euml; 
+            deri tani miliona vite p&euml;r t&euml; udh&euml;tuar prej b&euml;rtham&euml;s s&euml; Diellit deri te siperfaqja e tij.
+        
+        
+        
+           Dielli udh&euml;ton n&euml; 220 kilometra p&euml;r sekond. Dielli &euml;sht&euml; 24,000-26,000 
+            vite drite prej qendr&euml;s s&euml; galaktik&euml;s dhe i duhen Diellit 225-250 vite p&euml;r t&euml; 
+            kompletuar nj&euml; orbit te qendr&euml;s t&euml; rrug&euml;s s&euml; Qumshtit.
+              
+        Distanca prej Diellit deri te Toka ndryshon p&euml;rgjat&euml; vitit. Sepse Toka udh&euml;ton
+            n&euml; nj&euml; orbit&euml; eliptike rreth Diellit, distanca n&euml; mes dy trupave shkon prej 147 
+            deri 152 kilometra. Distanca mes Tok&euml;s dhe Diellit quhet <abbr title="Astronomical Unit(Madh&euml;si Astronomike)" ><mark>AU</mark></abbr>.
+        
+        
+        Dielli &euml;sht&euml; n&euml; mesin e jet&euml;s s&euml; tij. N&euml; rreth 4.5
+            milion vjeqarin, Dielli tanim&euml; e ka diegur rreth gjysm&euml;n e Hidrogjenit t&euml; tij.
+            I kan&euml; mbetur mjaft&euml; p&euml;r t&euml; vazhduar t&euml; dieg Hidrogjenin p&euml;r 
+            p&euml;raf&euml;rsisht edhe 5 milion vite tjera. Dielli aktualisht &euml;sht&euml; yll i njohur si Xhuxh i Verdh&euml;.
+        
+        
+        Dielli ka nj&euml; fush&euml; magnetike shum&euml; t&euml; fort&euml;. 
+            Shperthimet solare ndodhin kur energjia magnetike lirohet  nga Dielli gjat&euml; 
+            stuhive magnetike, t&euml; cilat ne i shohim si njoll&euml; diellore. N&euml; njolla diellore, 
+            vijat magnetike jan&euml; t&euml; shtremb&euml;ruar dhe rrotullohen, sikur nj&euml; tornado q&euml; 
+            do t&euml; ndodhte n&euml; Tok&euml;.
+        </div>
+        
+    </body>
+</html>
+

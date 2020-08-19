@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Jupiter</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="sistemiSolar2.css"/>
+        <style>
+                   
+                    table { color: #333;opacity:0.8;
+                               font-family:  "Lucida Sans Unicode", "Lucida Grande", "Sans-Serif"; 
+                               font-size: 14px;
+                               width: 850px;
+                               border-collapse: collapse;
+                               border-spacing: 0;
+                         box-shadow: 4px 4px 7px #B0C4DE;}
+                    td, th { border: 1px solid #CCC;
+                               height: 30px;}
+                         th {background: #DCDCDC; 
+                              font-weight: bold;}
+                         td {background: #FAFAFA; 
+                              text-align: center;}
+                         #ss{color:black;}
+                         .mm{color:white;}
+                            #submit 
+                             {  background-color: white;
+                                padding:1px 5px 1px 5px;
+                                position:absolute;
+                                margin-left:125%;
+                                margin-top: 0%; 
+                              }
+                        #planetss
+                            {
+                                    position:absolute;
+                                    margin-left:79%;
+                                    margin-top:0%;
+
+                           }
+                           
+                 </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("table").hide();
+        alert("The table is now hidden");
+    });
+    $("#show").click(function(){
+        $("table").show();
+        alert("The table is shown");
+    });
+});
+       </script>
+      
+<script>
+$(document).ready(function(){
+    $(".btn1").click(function(){
+        $("iframe").fadeOut(1000);
+    });
+    $(".btn2").click(function(){
+        $("iframe").fadeIn(1000);
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("p").css("background-color", "transparent");
+});
+</script>
+<script>
+    $(document).ready(function() {
+    $("#planetfoto").animate({left: "+=300"}, 2000);
+    $("#planetfoto").animate({left: "-=300"}, 1000);
+});
+    </script>
+    <script>
+$(document).ready(function(){
+    $("h2").bind("click", function(){
+        alert("The title was clicked.");
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("img").click(function(){
+        alert("The image was clicked.");
+    });
+});
+</script>
+       
+
+    </head>
+    <body id ="bg">
+        
+        
+        <h2 id="title">Jupiter</h2>
+        
+            <img id="planetfoto" src="jupiteri.ico" alt="Jupiter" width="250" height="240"/><div class="video">
+			 <form method="get">
+     <input list="planets" name = "planets" id = "planetss">
+     <datalist id="planets">
+     <option value ="Mercury">
+     <option value="Venus">
+     <option value="Earth">
+     <option value="Mars">
+     <option value="Jupiter">
+     <option value="Saturn">
+     <option value="Uranus">
+     <option value="Neptune">
+     <option value="Sun">
+  </datalist>
+    </form>
+            <button id = "submit" onclick="ShkoNeFaqe();">Submit</button>
+            <script>
+                function ShkoNeFaqe(){
+                    var planetz = document.getElementById("planetss").value;
+                    
+                    if(planetz === "Mercury")location = "Mercury.html";
+                    if(planetz === "Venus")location = "Venus.html";
+                    if(planetz === "Earth")location = "Earth.html";
+                    if(planetz === "Mars")location = "Mars.html";
+                    if(planetz === "Jupiter")location = "Jupiter.html";
+                    if(planetz === "Saturn")location = "Saturn.html";
+                    if(planetz === "Uranus")location = "Uranus.html";
+                    if(planetz === "Neptune")location = "Neptune.html";
+                    if(planetz === "Sun")location = "Sun.html";
+            }
+            </script>
+                <button class="btn1">Fade out</button>
+               <button class="btn2">Fade in</button>
+                <iframe width="350" height="250" src="https://www.youtube.com/embed/s56pxa9lpvo" frameborder="0" allowfullscreen></iframe></div>
+            <div class="video3"><iframe width="350" height="250" src="https://www.youtube.com/embed/8XPmcfRXDrc" frameborder="0" allowfullscreen></iframe></div>
+            
+            <div id="tekst">
+                Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a giant planet with a mass<br> one-thousandth that of the Sun, but two and a half times that of all the other planets in the Solar System<br> combined. Jupiter is a gas giant, along with Saturn, with the other two giant planets, Uranus and Neptune,<br> being ice giants. Jupiter was known to astronomers of ancient times. The Romans named it after their god<br> Jupiter.
+  
+            </div>
+             <button id="hide">Hide</button>
+        <button id="show">Show</button>
+          <table  border="1" cellspacing="3">
+            <thead>
+                <tr>
+                    <th><img src="jupiteri.ico" alt="Jupiter" height="90" width="80"></th>
+                    <th>Mean Distance from Sun(million km)</th>
+                    <th> Period of Revolution</th>
+                    <th>Period of Rotation at Equador </th>
+                    <th>Eccentricity of Orbit</th>
+                    <th>Equatorial diameter (km) </th>
+                    <th>Mass</th>
+                    <th>Density</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><h3 id="ss">Jupiter</h3></td>
+                    <td>778.4</td>
+                    <td>11.9 y</td>
+                    <td>9h 50 min 30 s</td>
+                    <td>0.048</td>
+                    <td>142,984</td>
+                    <td>317.83</td>
+                    <td>1.3</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+      
+       <p>QUICK JUPITER FACTS</p>
+        <ul>
+            
+            <li class="mm">Jupiter is the largest and most massive planet in the Solar System.</li>
+            <li class="mm">Jupiter has the shortest day of the eight planets. </li>
+            <li class="mm">Jupiter has at least 67 moons in satellite around the planet.</li>
+            <li class="mm">The largest of Jupiter’s moons, Ganymede is the largest moon in the solar system.</li>
+            <li class="mm">Jupiter is the fourth brightest object in our solar system.</li>
+            <li class="mm">Eight spacecraft have visited Jupiter so far.</li>
+            <li class="mm">Jupiter’s Great Red Spot is an enormous storm that has been raging for over 300 years. This storm is so<br> wide that three Earth’s would fit inside of it.</li>
+        </ul>
+        <p>DETAILED JUPITER FACTS</p>
+        
+       <div id="planeteTekst">The ancient Babylonians were the first to record their sightings of Jupiter.This was around the 7th or 8th century BC. Jupiter is named after the king of the Roman gods. To the Greeks, it represented Zeus, the god of thunder. The Mesopotamians saw Jupiter as the god Marduk and patron of the city of Babylon. Germanic tribes saw this planet as Donar, or Thor.
+        Jupiter has the shortest day of all the planets.It turns on its axis once every 9 hours and 55 minutes. The rapid rotation flattens the planet slightly, giving it an oblate shape.
+        Jupiter has unique cloud features.The upper atmosphere of Jupiter is divided into cloud belts and zones. They are made primarily of ammonia crystals, sulfur, and mixtures of the two compounds.
+        Jupiter’s interior is made of rock, metal, and hydrogen compounds.Below Jupiter’s massive atmosphere (which is made primarily of hydrogen), there are layers of compressed hydrogen gas, liquid metallic hydrogen, and a core of ice, rock, and metals
+        Jupiter has a thin ring system.Its rings are composed mainly of dust particles ejected from some of Jupiter’s smaller worlds during impacts from incoming comets and asteroids. The ring system begins some 92,000 kilometres above Jupiter’s cloud tops and stretches out to more than 225,000 km from the planet. They are between 2,000 to 12,500 kilometres thick.
+        Eight spacecraft have visited Jupiter.Pioneer 10 and 11, Voyager 1 and 2, Galileo, Cassini, Ulysses, and New Horizons missions. The Juno mission is its way to Jupiter and will arrive in July 2016. Other future missions may focus on the Jovian moons Europa, Ganymede, and Callisto, and their subsurface oceans.
+       </div>
+           
+    </body>
+</html>

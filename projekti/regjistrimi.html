@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <link rel="stylesheet" href="logincss.css" >
+        <title>Regjistrimi</title>
+		<script>
+		 alert("Duhet te mbushesh te gjitha hapsirat");
+		</script>
+        <style>
+             body
+             {background: #111; margin: 0px;}
+            #banner
+            {width: 100%;
+            height: 500px;
+            margin: 0px auto;
+            background-color: #000;
+            
+            background-image: url(planet.png) , url(stars.png), url(starsb.jpg);
+            background-position: 120% 70px , 0px 0px, 0px 0px;
+            background-repeat: no-repeat, repeat, repeat;
+            animation: animate-background linear 30s infinite;
+            }
+            @keyframes animate-background
+            {
+                from {  background-position: 120% 70px, 0px 0px, 0px 0px; }
+                to {  background-position: -20% 500px , -100px 10px, -1900px 0px;   }
+            }
+            
+        </style>
+    </head>
+    
+    
+ <body id="banner">
+        
+        
+        
+        <img src="asteroid.png" alt="Kometa" style="margin: 100px 0px 0px  40%;">
+        
+        <div class="bb">
+            
+            <h2>Regjistrimi</h2>
+            <form>
+			 <div>Te pakten 5 karaktere<input id="demo" type="text" placeholder="Shkruani Emrin e P&euml;rdoruesit">
+                   <button type="button" onclick="myFunction()">Try</button>
+               <p id="message"></p>
+  <script>
+    function myFunction() {
+       var message, x;
+       message = document.getElementById("message");
+       message.innerHTML = "";
+       x = document.getElementById("demo").value;
+       try { 
+          if(x == "")  throw "empty";
+          x =String(x);
+          if(x.length < 5)    throw "too low";
+          if(x.length > 6)   throw "correct";
+           }
+    catch(err) {
+        message.innerHTML = "Input is " + err;
+    }
+}
+</script>
+             
+               </div>
+                <input type="text" placeholder="Shkruani Email-in"><br><br>
+                <input type="password" placeholder="Shkruani Fjalkalimin"><br><br>
+               
+                
+                <input type="submit" value="Regjistrohu">
+            </form>
+            
+        </div>
+        
+    </body>
+    
+    
+    
+    
+    
+    
+    
+</html>

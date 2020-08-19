@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Earth</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="sistemiSolar2.css"/>
+         <style>
+                   
+                    table { color: #333;opacity:0.8;
+                               font-family:  "Lucida Sans Unicode", "Lucida Grande", "Sans-Serif"; 
+                               font-size: 14px;
+                               width: 850px;
+                               border-collapse: collapse;
+                               border-spacing: 0;
+                         box-shadow: 4px 4px 7px #B0C4DE;}
+                    td, th { border: 1px solid #CCC;
+                               height: 30px;}
+                         th {background: #DCDCDC; 
+                              font-weight: bold;}
+                         td {background: #FAFAFA; 
+                              text-align: center;}
+                         #planet{color:black;}
+                         .mm{color:white;}
+                         
+                                #submit 
+                             {  background-color: white;
+                                padding:1px 5px 1px 5px;
+                                position:absolute;
+                                margin-left:125%;
+                                margin-top: 0%; 
+                              }
+                        #planetss
+                            {
+                                    position:absolute;
+                                    margin-left:79%;
+                                    margin-top:0%;
+
+                           }
+                           
+                 </style>
+                   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("table").hide();
+        alert("The table is now hidden");
+    });
+    $("#show").click(function(){
+        $("table").show();
+        alert("The table is shown");
+    });
+});
+       </script>
+      
+<script>
+$(document).ready(function(){
+    $(".btn1").click(function(){
+        $("iframe").fadeOut(1000);
+    });
+    $(".btn2").click(function(){
+        $("iframe").fadeIn(1000);
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("p").css("background-color", "transparent");
+});
+</script>
+<script>
+    $(document).ready(function() {
+    $("#planetfoto").animate({left: "+=300"}, 2000);
+    $("#planetfoto").animate({left: "-=300"}, 1000);
+});
+    </script>
+    <script>
+$(document).ready(function(){
+    $("h2").bind("click", function(){
+        alert("The title was clicked.");
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("img").click(function(){
+        alert("The image was clicked.");
+    });
+});
+</script>
+
+
+       
+
+    </head>
+    <body id ="bg">
+        
+        
+        <h2 id="title">Earth</h2>
+        
+        
+            <img id="planetfoto" src="toka.png" alt="Earth" /><div class="video">
+                <form method="get">
+     <input list="planets" name = "planets" id = "planetss">
+     <datalist id="planets">
+     <option value ="Mercury">
+     <option value="Venus">
+     <option value="Earth">
+     <option value="Mars">
+     <option value="Jupiter">
+     <option value="Saturn">
+     <option value="Uranus">
+     <option value="Neptune">
+     <option value="Sun">
+  </datalist>
+    </form>
+            <button id = "submit" onclick="ShkoNeFaqe();">Submit</button>
+            <script>
+                function ShkoNeFaqe(){
+                    var planetz = document.getElementById("planetss").value;
+                    
+                    if(planetz === "Mercury")location = "Mercury.html";
+                    if(planetz === "Venus")location = "Venus.html";
+                    if(planetz === "Earth")location = "Earth.html";
+                    if(planetz === "Mars")location = "Mars.html";
+                    if(planetz === "Jupiter")location = "Jupiter.html";
+                    if(planetz === "Saturn")location = "Saturn.html";
+                    if(planetz === "Uranus")location = "Uranus.html";
+                    if(planetz === "Neptune")location = "Neptune.html";
+                    if(planetz === "Sun")location = "Sun.html";
+            }
+            </script>
+             <button class="btn1">Fade out</button>
+                <button class="btn2">Fade in</button>
+                <iframe width="350" height="250" src="https://www.youtube.com/embed/lIwssqsvpbk" frameborder="0" allowfullscreen></iframe></div>
+            <div class="video3"><iframe width="350" height="250" src="https://www.youtube.com/embed/1nSIj9tvhbY" frameborder="0" allowfullscreen></iframe></div>
+            
+            <div id="tekst">
+                Earth (otherwise known as the world,in Greek: Γαῖα Gaia, or in Latin: Tellus, Terra) is the third planet from <br>the Sun, the densest planet in the Solar System, the largest of the Solar System's four terrestrial planets, and <br>the only astronomical object known to harbor life.
+                According to radiometric dating and other sources of<br> evidence, Earth formed about 4.54 billion years ago. Earth gravitationally interacts with other objects in<br> space, especially the Sun and the Moon.
+            </div>
+       <button id="hide">Hide</button>
+             <button id="show">Show</button>
+          <table  border="1" cellspacing="3">
+            <thead>
+                <tr>
+                    <th><img src="toka.png" alt="Earth" height="90" width="85"></th>
+                    <th>Mean Distance from Sun(million km)</th>
+                    <th> Period of Revolution</th>
+                    <th>Period of Rotation at Equador </th>
+                    <th>Eccentricity of Orbit</th>
+                    <th>Equatorial diameter (km) </th>
+                    <th>Mass</th>
+                    <th>Density</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><h3 id="planet">Earth</h3></td>
+                    <td>149.6</td>
+                    <td>365.26 d</td>
+                    <td>23 h 56 min 4 s</td>
+                    <td>0.017</td>
+                    <td>12,756</td>
+                    <td>1.00</td>
+                    <td>5.5</td>
+                </tr>
+            </tbody>
+        </table>
+
+      
+         <p>QUICK EARTH FACTS</p>
+        <ul>
+            <li class="mm">It is the only planet that has an atmosphere containing 21 percent oxygen.</li>
+            <li class="mm">It is the only planet that has liquid water on its surface.</li>
+            <li class="mm">It is the only planet in the solar system that has life.</li>
+            <li class="mm">The Earth is the only inner planet (Mercury, Venus, Earth and Mars) to have one large satellite, the Moon.</li>
+        </ul>
+         <p>DETAILED EARTH FACTS</p>
+         
+         <div id="planeteTekst" >The Earth’s rotation is gradually slowing.This deceleration is happening almost imperceptibly, at approximately 17 milliseconds per hundred years, although the rate at which it occurs is not perfectly uniform. This has the effect of lengthening our days, but it happens so slowly that it could be as much as 140 million years before the length of a day will have increased to 25 hours.
+        The Earth was once believed to be the centre of the universe.Due to the apparent movements of the Sun and planets in relation to their viewpoint, ancient scientists insisted that the Earth remained static, whilst other celestial bodies travelled in circular orbits around it. Eventually, the view that the Sun was at the centre of the universe was postulated by Copernicus, though this is also not the case.
+        Earth has a powerful magnetic field.This phenomenon is caused by the nickel-iron core of the planet, coupled with its rapid rotation. This field protects the Earth from the effects of solar wind.
+        There is only one natural satellite of the planet Earth.As a percentage of the size of the body it orbits, the Moon is the largest satellite of any planet in our solar system. In real terms, however, it is only the fifth largest natural satellite.
+       Earth is the only planet not named after a god.The other seven planets in our solar system are all named after Roman gods or goddesses. Although only Mercury, Venus, Mars, Jupiter and Saturn were named during ancient times, because they were visible to the naked eye,the Roman method of naming planets was retained after the discovery of Uranus and Neptune.
+        The Earth is the densest planet in the Solar System.This varies according to the part of the planet; for example, the metallic core is denser than the crust. The average density of the Earth is approximately 5.52 grams per cubic centimetre.
+         </div>
+         
+            
+    </body>
+</html>
+

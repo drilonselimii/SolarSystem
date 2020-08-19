@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Saturn</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="sistemiSolar2.css"/>
+        <style>
+                    
+                    table { color: #333;
+                              opacity:0.8;
+                               font-family:  "Lucida Sans Unicode", "Lucida Grande", "Sans-Serif"; 
+                               font-size: 14px;
+                               width: 850px;
+                               border-collapse: collapse;
+                               border-spacing: 0;
+                              box-shadow: 4px 4px 7px #B0C4DE;}
+                    td, th { border: 1px solid #CCC;
+                               height: 30px;}
+                         th {background: #DCDCDC; 
+                              font-weight: bold;}
+                         td {background: #FAFAFA; 
+                              text-align: center;}
+                         #ss{color:black;}
+                         .mm{color:white;}
+                             #submit 
+                             {  background-color: white;
+                                padding:1px 5px 1px 5px;
+                                position:absolute;
+                                margin-left:125%;
+                                margin-top: 0%; 
+                              }
+                        #planetss
+                            {
+                                    position:absolute;
+                                    margin-left:79%;
+                                    margin-top:0%;
+
+                           }
+                        
+                 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("table").hide();
+        alert("The table is now hidden");
+    });
+    $("#show").click(function(){
+        $("table").show();
+        alert("The table is shown");
+    });
+});
+       </script>
+      
+<script>
+$(document).ready(function(){
+    $(".btn1").click(function(){
+        $("iframe").fadeOut(1000);
+    });
+    $(".btn2").click(function(){
+        $("iframe").fadeIn(1000);
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("p").css("background-color", "transparent");
+});
+</script>
+<script>
+    $(document).ready(function() {
+    $("#planetfoto").animate({left: "+=300"}, 2000);
+    $("#planetfoto").animate({left: "-=300"}, 1000);
+});
+    </script>
+    <script>
+$(document).ready(function(){
+    $("h2").bind("click", function(){
+        alert("The title was clicked.");
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("img").click(function(){
+        alert("The image was clicked.");
+    });
+});
+</script>
+
+    </head>
+    <body id ="bg">
+        <h2 id="title">Saturn</h2>
+        
+            <img id="planetfoto" src="saturni.png" alt="Saturn" /><div class="video">
+			<form method="get">
+                 <input list="planets" name = "planets" id = "planetss">
+                 <datalist id="planets">
+                     <option value = "Mercury"> Mercury </option>
+                     <option value="Venus"> Venus </option>
+                     <option value="Earth">Earth </option>
+                     <option value="Mars">Mars</option>
+                     <option value="Jupiter">Jupiter</option>
+                     <option value="Saturn">Saturn</option>
+                     <option value="Uranus">Uranus</option>
+                     <option value="Neptune">Neptune</option>
+                     <option value="Sun">Sun</option>
+  </datalist>
+    </form>
+            <button id = "submit" onclick="ShkoNeFaqe();">Submit</button>
+            
+             <script>
+                function ShkoNeFaqe(){
+                    var planetz = document.getElementById("planetss").value;
+                    
+                    if(planetz === "Mercury")location = "Mercury.html";
+                    if(planetz === "Venus")location = "Venus.html";
+                    if(planetz === "Earth")location = "Earth.html";
+                    if(planetz === "Mars")location = "Mars.html";
+                    if(planetz === "Jupiter")location = "Jupiter.html";
+                    if(planetz === "Saturn")location = "Saturn.html";
+                    if(planetz === "Uranus")location = "Uranus.html";
+                    if(planetz === "Neptune")location = "Neptune.html";
+                    if(planetz === "Sun")location = "Sun.html";
+            }
+            </script>
+                <button class="btn1">Fade out</button>
+               <button class="btn2">Fade in</button>
+               
+                <iframe width="350" height="250" src="https://www.youtube.com/embed/KDX1likfogQ" frameborder="0" allowfullscreen></iframe></div>
+            
+            <div class="video3"><iframe width="350" height="250" src="https://www.youtube.com/embed/AyFMPdHU1n0" frameborder="0" allowfullscreen></iframe></div>
+            
+            <div id="tekst">
+                Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas<br> giant with an average radius about nine times that of Earth. Although it has only one-eighth the average<br> density of Earth, with its larger volume Saturn is just over 95 times more massive. Saturn is named after the<br> Roman god of agriculture; its astronomical symbol (♄) represents the god's sickle.
+            </div>
+               <button id="hide">Hide</button>
+        <button id="show">Show</button>
+           <table  border="1" cellspacing="3">
+            <thead>
+                <tr>
+                    <th><img src="saturni.png" alt="Saturn" height="85" width="95"></th>
+                    <th>Mean Distance from Sun(million km)</th>
+                    <th> Period of Revolution</th>
+                    <th>Period of Rotation at Equador </th>
+                    <th>Eccentricity of Orbit</th>
+                    <th>Equatorial diameter (km) </th>
+                    <th>Mass</th>
+                    <th>Density</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><h3 id="ss">Saturn</h3></td>
+                    <td>1,426.7</td>
+                    <td>29.5 y</td>
+                    <td>10 h 14 min</td>
+                    <td>0.054</td>
+                    <td>120,536</td>
+                    <td>95.16</td>
+                    <td>0.7</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+      
+        <p>QUICK SATURN FACTS</p>
+        <ul>
+            
+            <li class="mm">Saturn is the least dense planet in the Solar System</li>
+            <li class="mm"> The first astronomers thought the rings were moons. </li>
+            <li class="mm">Saturn has only been visited 4 times by spacecraft</li>
+            <li class="mm">Saturn has 62 moons</li>
+            <li class="mm">The length of a day on Saturn was a mystery until recently</li>
+            <li class="mm">Sometimes the rings disappear</li>
+            <li class="mm">There could be life near Saturn</li>
+        </ul>
+        <p>DETAILED SATURN FACTS</p>
+        <div id="planeteTekst">
+           Saturn can be seen with the naked eye.It is the fifth brightest object in the solar system and is also easily studied through binoculars or a small telescope.
+       Saturn is the flattest planet.Its polar diameter is 90% of its equatorial diameter, this is due to its low density and fast rotation. Saturn turns on its axis once every 10 hours and 34 minutes giving it the second-shortest day of any of the solar system’s planets.
+       Saturn’s upper atmosphere is divided into bands of clouds.The top layers are mostly ammonia ice. Below  them, the clouds are largely water ice. Below are layers of cold hydrogen and sulfur ice mixtures.
+      Saturn is made mostly of hydrogen.It exists in layers that get denser farther into the planet. Eventually, deep inside, the hydrogen becomes metallic. At the core lies a hot interior.
+       Saturn has the most extensive rings in the solar system.The Saturnian rings are made mostly of chunks of ice and small amounts of carbonaceous dust. The rings stretch out more than 120,700 km from the planet, but are are amazingly thin: only about 20 meters thick.
+        Saturn has 150 moons and smaller moonlets.All are frozen worlds. The largest moons are Titan and Rhea. Enceladus appears to have an ocean below its frozen surface.
+        Four spacecraft have visited Saturn.Pioneer 11, Voyager 1 and 2, and the Cassini-Huygens mission have all studied the planet. Cassini continues to orbit Saturn, sending back a wealth of data about the planet, its moons, and rings.
+        </div>
+           
+    </body>
+</html>

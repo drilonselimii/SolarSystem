@@ -1,0 +1,77 @@
+body
+{
+	font-family: sans-serif;
+	background-image: url(bg.jpg);
+	background-attachment: fixed;
+	background-position: center;
+}
+#quiz
+{
+	opacity: 0.5;
+	background: lightgray;
+	border-radius: 15px;
+	margin-left: 5%;
+	padding: 2%;
+	width: 30%;
+	float: left;
+	color: black;
+	font-size: 120%;
+}
+input
+{
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+#button
+{
+	background: black;
+	border: none;
+	border-radius: 10px;
+	font-size: 110%;
+	padding: 10px;
+	margin-left: 26%;
+	margin-top: 15px;
+	transition-duration: 0.5s;
+	color: white;
+	opacity: 1;
+}
+#button:hover
+{
+	background: white;
+	border: 1px solid black;
+	color: black;
+	cursor: pointer;
+}
+
+
+#after_submit
+{
+	visibility: hidden;
+	background: lightgray;
+	padding: 1%;
+	opacity: 0.5;
+	float: left;
+	border-radius: 15px;
+	margin-top: 60%;
+	margin-left: 2%;
+	font-size: 200%;
+	color: black;
+
+}
+#title
+{
+	color: gray;
+	margin-left: 15%;
+	font-size: 350%;
+}
+radio
+{
+	cursor: pointer;
+}
+#ikona
+{
+	float: right;
+	width: 50%;
+	margin: 5%;
+	margin-top: ;
+}

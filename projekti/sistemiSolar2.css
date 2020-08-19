@@ -1,0 +1,147 @@
+body
+{ background-color: black;
+font-family:  "Lucida Sans Unicode", "Lucida Grande", Sans-Serif; 
+}
+
+.ah{
+display: inline-block;
+color:white;
+background-color:black;
+font-weight:bold;
+text-decoration:none;
+padding:0.2em;
+border-radius: 5px;
+}
+nav
+{
+font-size: 1.3em;
+margin: 0 0 0 0 ;
+padding: 0 0 0 0;
+background-color: black;
+}
+nav ul li 
+{
+
+  list-style: none;
+  display: inline-block; 
+
+ 
+}
+    @font-face {
+    font-family: Fonti;
+    src: url(gothambold1.woff);
+}
+h2{
+	color:white;
+	text-shadow: 3px 3px 3px #4682B4;
+       font-family: Fonti;
+       transform: translate(30px,5px);
+       
+      
+      
+}
+div
+{
+   
+	color:white;
+	padding:0.2em;
+}
+.video{
+position: absolute;
+margin-top: -17%;
+margin-bottom: 0px;
+margin-left: 970px;
+margin-right: 500px;
+
+}
+
+.video3{
+position: absolute;
+margin-top: 5%;
+margin-left: 970px;
+margin-right: 500px;
+}
+
+p
+{
+        font-family: "Lucida Sans Unicode", "Lucida Grande",  Sans-Serif; 
+	padding-left: 30px;
+	color: white;
+         font-size: 30px;
+        transform: rotateY(30deg);
+}
+body
+{
+	background-color:black;
+}
+
+h3
+{
+	color:white;
+        transform: rotate(2deg);
+         
+}
+#bg
+{
+	background-attachment: fixed;
+	background-size: 100%;
+	background-position: center;
+        background-image: url(bg.jpg);
+}
+#title
+{
+	margin: 0;
+	font-size: 500%;
+	color: white;
+     
+        
+}
+
+h1
+{
+   color: white;
+ 
+                             
+   
+}
+
+#planeteTekst
+                           {
+                               -webkit-column-count: 2;
+                               -webkit-column-gap: 20px;
+                               -webkit-column-width: 200px;
+                               -webkit-column-rule: 1px solid lightblue;
+                               
+                           }
+#tekst
+
+{
+        font-family: "Lucida Sans Unicode", "Lucida Grande",         Sans-Serif; 
+	text-align:right-side;
+         transform: skewX(3deg); 
+  color: white;
+      width: 63%;
+      border:1px solid #021420;
+      word-wrap: break-word;
+	
+   
+        
+}
+
+                                #submit 
+                             {  background-color: white;
+                                padding:1px 5px 1px 5px;
+                                position:absolute;
+                                margin-left:92%;
+                                margin-top: -100%; 
+                              }
+                        #planetss
+                            {
+                                    position:absolute;
+                                    margin-left:79%;
+                                    margin-top:-100%
+
+                           }
+                           #planetfoto{position:relative;
+                                width: 220px;
+                                height: 210px;}
